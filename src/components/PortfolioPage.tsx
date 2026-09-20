@@ -45,7 +45,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
             className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#f6f3eb] border border-[#c59e5f]/30 text-xs uppercase tracking-[0.2em] font-medium text-[#9d7736] mb-4"
           >
             <Sparkles className="w-3.5 h-3.5 text-[#c59e5f]" />
-            <span>DISCIPLINED CAPITAL ALLOCATION | WE BACK 350+ COMPANIES</span>
+            <span>DISCIPLINED CAPITAL ALLOCATION | VENTURE & GROWTH HOLDINGS</span>
           </motion.div>
 
           <motion.div
@@ -62,7 +62,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
             transition={{ duration: 0.75, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
             className="font-serif text-5xl sm:text-6xl lg:text-[72px] font-normal leading-[1.06] text-[#10241d] tracking-tight mb-5"
           >
-            We Back 350+ Companies
+            Venture &amp; Growth Portfolio
           </motion.h1>
 
           <motion.p
@@ -72,7 +72,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
             transition={{ duration: 0.7, delay: 0.32, ease: [0.16, 1, 0.3, 1] }}
             className="text-base sm:text-lg text-[#444444] font-light leading-relaxed max-w-3xl"
           >
-            We back 350+ companies and visionary founders across direct angel and venture rounds, our General Partner deeptech fund (Seafund), and premier Tier-1 institutional fund alliances including Stride Ventures, RPSG Capital Ventures, Founder Bank Capital, and Gemba Capital — with many more emerging market leaders joining our portfolio network each year.
+            Backing visionary founders and high-conviction companies across direct angel rounds, our General Partner deeptech fund (Seafund), and premier Tier-1 institutional fund alliances including Stride Ventures, RPSG Capital Ventures, Founder Bank Capital, and Gemba Capital, with emerging market leaders joining our portfolio network each year.
           </motion.p>
         </div>
 
@@ -97,7 +97,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
 
           <div className="flex items-center gap-2 text-xs font-mono tracking-wider uppercase text-neutral-400">
             <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-            <span>350+ BACKED NATIONWIDE</span>
+            <span>EXPANSIVE VENTURE NETWORK</span>
           </div>
         </div>
       </section>
@@ -160,7 +160,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
             >
               <div className="flex items-center justify-between text-[10px] font-mono tracking-wider uppercase text-[#c59e5f]">
                 <span className="font-semibold">PORTFOLIO NETWORK</span>
-                <span>350+ COMPANIES</span>
+                <span>PAN-INDIA</span>
               </div>
 
               <div className="my-auto py-2 text-center">
@@ -168,13 +168,13 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                   ...and many more
                 </span>
                 <span className="text-[11px] text-[#dcc18b] font-light mt-1.5 block">
-                  350+ active ventures & institutional co-investments
+                  Diverse holdings across consumer, deeptech, and financial rails
                 </span>
               </div>
 
               <div className="pt-3 border-t border-white/10 flex items-center justify-between">
                 <span className="text-[11px] text-neutral-300 font-light">
-                  Direct & Fund Alliances
+                  Direct &amp; Fund Alliances
                 </span>
                 <button
                   onClick={() => onNavigate('contact')}
@@ -204,11 +204,11 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
               </div>
 
               <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-normal leading-[1.15] text-white mb-5">
-                We back 350+ companies, and many more are joining our platform.
+                A Generational Platform for High-Growth Ventures
               </h2>
 
               <p className="text-sm sm:text-base text-neutral-300 font-light leading-relaxed mb-8">
-                Through our direct family balance sheet, our General Partner venture fund (Seafund DeepTech), and anchor LP alliances across India's top institutional venture capital and venture debt managers (Stride Ventures, RPSG Capital, FBC, and Gemba Capital), SSA Family Holdings actively supports over 350 companies spanning technology, consumer retail, deeptech hardware, healthcare, and financial infrastructure.
+                Through our direct family balance sheet, our General Partner venture fund (Seafund DeepTech), and anchor LP alliances across India's premier institutional venture capital and venture debt managers (Stride Ventures, RPSG Capital, FBC, and Gemba Capital), SSA Family Holdings champions transformative founders spanning technology, consumer retail, deeptech hardware, healthcare, and financial infrastructure.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-white/10 mb-8">

@@ -41,20 +41,22 @@ export const STRATEGIC_PILLARS: AssetPillar[] = [
 ];
 
 export const IMAGES = {
-  // Hero: Ultra-prestigious family investment office and executive suite in New Delhi
-  heroOffice: '/assets/images/family_office_hero.jpg',
-  // Mission & Vision: Authentic architectural heritage monument of New Delhi (Qutub Minar, Est. 1990 legacy)
-  heritageBoardroom: '/assets/images/qutub-minar-delhi.jpg',
-  // Stable Capital Platform: Dramatic stone architectural interior
+  // Hero: Prestigious modern executive conference suite with natural light and skyline perspective
+  heroOffice:
+    'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
+  // Mission & Vision: Timeless monumental institutional headquarters architecture
+  heritageBoardroom:
+    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
+  // Stable Capital Platform: Modern minimalist architectural atrium
   stableCapital:
     'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=85',
   // Investments: Modern fluted vertical facade
   privateMarketsFacade:
     'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
-  // Investments: Neoclassical stone temple with illuminated windows
+  // Investments: Architectural executive glass and steel civic interior
   publicMarketsCivic:
-    'https://images.unsplash.com/photo-1541888946425-d0fbb1862572?auto=format&fit=crop&w=1600&q=85',
-  // Investments: Architectural brutalist concrete facade
+    'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=85',
+  // Investments: Architectural modernist facade
   realEstateModern:
     'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=85',
 };

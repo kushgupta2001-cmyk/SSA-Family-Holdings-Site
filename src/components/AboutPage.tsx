@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import { motion } from 'motion/react';
 import { PageRoute } from '../types';
 import { LEADERSHIP_TEAM, TIMELINE_MILESTONES } from '../data/aboutData';
@@ -10,9 +10,6 @@ import {
   Building2,
   TrendingUp,
   ExternalLink,
-  Camera,
-  Check,
-  UploadCloud,
 } from 'lucide-react';
 
 interface AboutPageProps {
@@ -20,57 +17,6 @@ interface AboutPageProps {
 }
 
 export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
-  const multiFileInputRef = useRef<HTMLInputElement>(null);
-  const [batchNotice, setBatchNotice] = useState<string | null>(null);
-  const [isSectionDragging, setIsSectionDragging] = useState(false);
-
-  const processFiles = (files: FileList | File[]) => {
-    Array.from(files).forEach((file) => {
-      const lower = file.name.toLowerCase();
-      let matchedMember = LEADERSHIP_TEAM.find((m) => {
-        const first = m.name.toLowerCase().split(' ')[0];
-        return lower.includes(first);
-      });
-
-      if (!matchedMember) {
-        if (lower.includes('sanjay')) matchedMember = LEADERSHIP_TEAM[0];
-        else if (lower.includes('agam')) matchedMember = LEADERSHIP_TEAM[1];
-        else if (lower.includes('kushagra')) matchedMember = LEADERSHIP_TEAM[2];
-      }
-
-      if (matchedMember) {
-        const targetMember = matchedMember;
-        const reader = new FileReader();
-        reader.onload = async (e) => {
-          const dataUrl = e.target?.result as string;
-          if (dataUrl) {
-            localStorage.setItem(`sgre_portrait_${targetMember.name}`, dataUrl);
-            window.dispatchEvent(
-              new CustomEvent('portrait-updated', {
-                detail: { name: targetMember.name, dataUrl },
-              })
-            );
-            try {
-              await fetch('/api/upload-portrait', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                  filename: targetMember.defaultFilename,
-                  base64: dataUrl,
-                }),
-              });
-            } catch (err) {
-              console.warn('Could not sync to server disk:', err);
-            }
-          }
-        };
-        reader.readAsDataURL(file);
-      }
-    });
-
-    setBatchNotice('Photos synced directly to leadership profiles.');
-    setTimeout(() => setBatchNotice(null), 4000);
-  };
   return (
     <div className="w-full bg-white text-[#222222] overflow-hidden">
       {/* 1. HERO SECTION (Editorial, natural, no AI-slop grey pill tags or $100M+ badge) */}
@@ -246,36 +192,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       {/* 3. LEADERSHIP TEAM SECTION (With Pedigree Logos for Agam & Kushagra) */}
       <section
         id="leadership-section"
-        onDragOver={(e) => {
-          e.preventDefault();
-          setIsSectionDragging(true);
-        }}
-        onDragLeave={() => setIsSectionDragging(false)}
-        onDrop={(e) => {
-          e.preventDefault();
-          setIsSectionDragging(false);
-          if (e.dataTransfer.files?.length) {
-            processFiles(e.dataTransfer.files);
-          }
-        }}
-        className={`w-full bg-white py-16 sm:py-24 transition-colors relative ${
-          isSectionDragging ? 'bg-[#f4f8f5] ring-2 ring-[#c59e5f]/60' : ''
-        }`}
+        className="w-full bg-white py-16 sm:py-24"
       >
-        {/* Hidden multi-file picker */}
-        <input
-          ref={multiFileInputRef}
-          type="file"
-          multiple
-          accept="image/png,image/jpeg,image/jpg,image/webp"
-          className="hidden"
-          onChange={(e) => {
-            if (e.target.files?.length) {
-              processFiles(e.target.files);
-            }
-          }}
-        />
-
         <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
           <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
             <span className="text-xs uppercase tracking-[0.26em] font-medium text-[#c59e5f] block mb-2">
@@ -288,13 +206,6 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <p className="text-sm sm:text-base text-[#555555] font-light mt-4 leading-relaxed">
               Uniting senior chartered accountancy expertise, turnkey real estate execution, and institutional venture fund governance.
             </p>
-
-            {batchNotice && (
-              <div className="mt-4 inline-flex items-center gap-2 bg-[#10241d] text-white px-4 py-2 text-xs rounded shadow-md border border-[#c59e5f]/40">
-                <Check size={14} className="text-[#86bc25]" />
-                <span>{batchNotice}</span>
-              </div>
-            )}
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 sm:gap-14">

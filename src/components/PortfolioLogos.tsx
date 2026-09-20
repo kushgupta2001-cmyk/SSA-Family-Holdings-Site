@@ -113,22 +113,33 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
 
     case 'bluestone':
       return (
-        <svg viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(8, 8)">
-            <polygon points="14,2 26,14 14,26 2,14" fill="#10241d" />
-            <polygon points="14,6 22,14 14,22 6,14" fill="#ffffff" />
-            <polygon points="14,10 18,14 14,18 10,14" fill="#c59e5f" />
+        <svg viewBox="0 0 180 54" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          {/* BlueStone navy stylized monogram and tracked brand typography */}
+          <g transform="translate(72, 4)">
+            {/* 'b' shape with inner counter cutout and lower dot */}
+            <path
+              d="M3 2V24C3 24 7 24 10.5 21C14 17.5 14 13 14 13C14 7 10 7 10 7L10 2H3Z"
+              fill="#052453"
+            />
+            <circle cx="8.5" cy="15.5" r="2.8" fill="#ffffff" />
+            <circle cx="15.5" cy="22.5" r="2" fill="#052453" />
+            {/* 's' shape ribbon */}
+            <path
+              d="M16 8C20 6.5 24 8 24.5 11.5C25 14 22.5 15.5 19 17C15 18.5 15 22 19 23.5C22.5 24.5 26 22 26 22L27 24.5C27 24.5 22.5 27 17.5 26C12.5 25 11.5 20.5 15 17C18.5 14.5 22 13 21 10.5C20 8.8 17 8 14 9.5L16 8Z"
+              fill="#052453"
+            />
           </g>
           <text
-            x="44"
-            y="28"
-            fontFamily="Georgia, serif"
+            x="90"
+            y="45"
+            textAnchor="middle"
+            fontFamily="system-ui, -apple-system, sans-serif"
             fontWeight="700"
-            fontSize="19"
-            letterSpacing="0.02em"
-            fill="currentColor"
+            fontSize="12"
+            letterSpacing="0.26em"
+            fill="#052453"
           >
-            BlueStone
+            BLUESTONE
           </text>
         </svg>
       );
@@ -265,70 +276,132 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
     // =========================================================================
     case 'giva':
       return (
-        <svg viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <svg viewBox="0 0 170 46" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
           <text
-            x="80"
+            x="20"
             y="32"
-            textAnchor="middle"
-            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
-            fontWeight="900"
-            fontSize="34"
-            letterSpacing="0.28em"
-            fill="currentColor"
+            fontFamily="'Cinzel', 'Playfair Display', Didot, 'Bodoni MT', 'Times New Roman', serif"
+            fontWeight="400"
+            fontSize="28"
+            letterSpacing="0.22em"
+            fill="#111111"
           >
             GIVA
           </text>
+          {/* Faceted diamond jewel mark */}
+          <g transform="translate(138, 16)">
+            <rect x="-8" y="-8" width="16" height="16" transform="rotate(45)" fill="#222222" />
+            <rect x="-6" y="-6" width="12" height="12" transform="rotate(45)" fill="#555555" />
+            <rect x="-4.2" y="-4.2" width="8.4" height="8.4" transform="rotate(45)" fill="#999999" />
+            <rect x="-2.5" y="-2.5" width="5" height="5" transform="rotate(45)" fill="#d4d4d4" />
+            <rect x="-1.2" y="-1.2" width="2.4" height="2.4" transform="rotate(45)" fill="#ffffff" />
+          </g>
         </svg>
       );
 
     case 'mcaffeine':
       return (
-        <svg viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(6, 6)">
-            <circle cx="16" cy="16" r="14" stroke="#0d9488" strokeWidth="2" fill="none" />
+        <svg viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          {/* Grey moon badge & 'm' */}
+          <g transform="translate(18, 5)">
+            <circle cx="10" cy="8" r="6.5" fill="#78828a" />
             <path
-              d="M14 9C15 13 18 15 21 16C19 19 16 21 15 25H11C12 21 12 18 10 16C9 14 9 12 11 10Z"
-              fill="#0d9488"
+              d="M12 4.5C10 5.5 9 7.5 9.5 9.5C10 11.5 12 12.5 14 12C12.5 13.5 10 13.5 8.5 12.5C7 11.5 6.5 9.5 7.5 7.5C8.5 5.5 10.5 4.5 12 4.5Z"
+              fill="#ffffff"
             />
+            <text
+              x="22"
+              y="13"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              fontWeight="800"
+              fontSize="13"
+              fill="#78828a"
+            >
+              m
+            </text>
           </g>
+          {/* Main caffeine in teal */}
           <text
-            x="46"
-            y="28"
+            x="14"
+            y="40"
             fontFamily="system-ui, -apple-system, sans-serif"
             fontWeight="800"
-            fontSize="19"
-            letterSpacing="-0.02em"
-            fill="#0d9488"
+            fontSize="26"
+            letterSpacing="-0.03em"
+            fill="#00bda0"
           >
-            mCaffeine
+            caffeine
+          </text>
+          <text
+            x="162"
+            y="26"
+            fontFamily="system-ui, -apple-system, sans-serif"
+            fontWeight="600"
+            fontSize="9"
+            fill="#78828a"
+          >
+            ®
           </text>
         </svg>
       );
 
     case 'the-souled-store':
       return (
-        <svg viewBox="0 0 190 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(6, 8)">
+        <svg viewBox="0 0 180 54" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          {/* Solid brand red background pill */}
+          <rect width="180" height="54" rx="8" fill="#e52427" />
+          {/* White ghost mascot on left */}
+          <g transform="translate(14, 8)">
             <path
-              d="M12 2C6 2 2 6 2 12V24L5 22L8 24L11 22L14 24L17 22L20 24L22 22V12C22 6 18 2 12 2Z"
-              stroke="#ef4444"
-              strokeWidth="2.2"
-              fill="none"
+              d="M17 2C9 2 4 8 4 16V30L8 28L12 30L17 28L22 30L26 28L30 30V16C30 8 25 2 17 2Z"
+              fill="#ffffff"
             />
-            <circle cx="8" cy="10" r="1.5" fill="#ef4444" />
-            <circle cx="16" cy="10" r="1.5" fill="#ef4444" />
+            {/* Ghost eyes */}
+            <ellipse cx="12" cy="14" rx="1.8" ry="3.2" fill="#e52427" />
+            <ellipse cx="22" cy="14" rx="1.8" ry="3.2" fill="#e52427" />
           </g>
-          <text
-            x="36"
-            y="26"
-            fontFamily="system-ui, -apple-system, sans-serif"
-            fontWeight="900"
-            fontSize="14"
-            letterSpacing="0.04em"
-            fill="currentColor"
-          >
-            THE SOULED STORE
-          </text>
+          {/* The Souled Store signature white script */}
+          <g transform="translate(52, 0)">
+            <text
+              x="0"
+              y="17"
+              fontFamily="'Brush Script MT', 'Caveat', cursive, sans-serif"
+              fontStyle="italic"
+              fontWeight="700"
+              fontSize="15"
+              fill="#ffffff"
+            >
+              The
+            </text>
+            <text
+              x="2"
+              y="33"
+              fontFamily="'Brush Script MT', 'Caveat', cursive, sans-serif"
+              fontStyle="italic"
+              fontWeight="700"
+              fontSize="18"
+              fill="#ffffff"
+            >
+              Souled
+            </text>
+            <text
+              x="26"
+              y="47"
+              fontFamily="'Brush Script MT', 'Caveat', cursive, sans-serif"
+              fontStyle="italic"
+              fontWeight="700"
+              fontSize="16"
+              fill="#ffffff"
+            >
+              store
+            </text>
+            <path
+              d="M24 49C45 49 70 48 90 44"
+              stroke="#ffffff"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+            />
+          </g>
         </svg>
       );
 
@@ -369,16 +442,16 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
 
     case 'perfora':
       return (
-        <svg viewBox="0 0 160 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <svg viewBox="0 0 170 46" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
           <text
-            x="80"
-            y="30"
+            x="85"
+            y="32"
             textAnchor="middle"
-            fontFamily="system-ui, -apple-system, sans-serif"
-            fontWeight="700"
-            fontSize="26"
-            letterSpacing="0.02em"
-            fill="currentColor"
+            fontFamily="'Didot', 'Bodoni MT', 'Playfair Display', Georgia, serif"
+            fontWeight="800"
+            fontSize="32"
+            letterSpacing="-0.02em"
+            fill="#111111"
           >
             perfora
           </text>
@@ -387,22 +460,60 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
 
     case 'plix':
       return (
-        <svg viewBox="0 0 150 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(8, 8)">
-            <rect x="2" y="2" width="24" height="24" rx="7" fill="#4ade80" />
-            <path d="M10 21V10H16C18.2 10 20 11.8 20 14C20 16.2 18.2 18 16 18H10" stroke="#ffffff" strokeWidth="2.5" strokeLinecap="round" />
-          </g>
+        <svg viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
           <text
-            x="42"
-            y="29"
+            x="80"
+            y="12"
+            textAnchor="middle"
             fontFamily="system-ui, -apple-system, sans-serif"
-            fontWeight="800"
-            fontSize="22"
-            letterSpacing="-0.03em"
-            fill="currentColor"
+            fontWeight="500"
+            fontSize="9"
+            letterSpacing="0.12em"
+            fill="#1d6f42"
           >
-            plix
+            The Plant Fix
           </text>
+          <g transform="translate(24, 14)">
+            {/* Leaf accented P */}
+            <path
+              d="M3 24V2H15C20 2 23 5 23 10C23 15 20 18 15 18H10V24H3Z"
+              fill="#00b050"
+            />
+            <path
+              d="M10 7H14C16 7 17 8 17 10C17 12 16 13 14 13H10V7Z"
+              fill="#ffffff"
+            />
+            {/* L */}
+            <path
+              d="M27 2H34V18H44V24H27V2Z"
+              fill="#00b050"
+            />
+            {/* I */}
+            <path
+              d="M49 2H56V24H49V2Z"
+              fill="#00b050"
+            />
+            <circle cx="52.5" cy="5" r="2" fill="#ffffff" />
+            {/* X with leaf flourish */}
+            <path
+              d="M62 2H69L76 13L83 2H90L81 14L92 24H84L76 15L70 24H62L72 13L62 2Z"
+              fill="#00b050"
+            />
+            <path
+              d="M87 21C90 19 93 21 92 24C89 24 87 23 87 21Z"
+              fill="#00b050"
+            />
+            <text
+              x="96"
+              y="6"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              fontWeight="600"
+              fontSize="7"
+              fill="#00b050"
+            >
+              ®
+            </text>
+          </g>
         </svg>
       );
 
@@ -588,20 +699,23 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
 
     case 'wint-wealth':
       return (
-        <svg viewBox="0 0 180 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(6, 8)">
-            <path d="M2 24L8 6H14L8 24H2Z" fill="#16a34a" />
-            <path d="M12 24L18 6H24L18 24H12Z" fill="#16a34a" />
-            <path d="M22 24L28 6H34L28 24H22Z" fill="#16a34a" />
+        <svg viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          {/* 3-stripe isometric ribbon W emblem in bright emerald green */}
+          <g transform="translate(10, 8)">
+            <polygon points="4,24 10,8 15,8 9,24" fill="#00b050" />
+            <polygon points="14,24 20,8 25,8 19,24" fill="#00b050" />
+            <polygon points="24,24 30,8 35,8 29,24" fill="#00b050" />
+            <polygon points="4,24 1,28 7,24" fill="#00b050" />
           </g>
+          {/* High-contrast Didone serif "wint" */}
           <text
-            x="48"
-            y="27"
-            fontFamily="Georgia, serif"
-            fontWeight="900"
-            fontSize="23"
+            x="58"
+            y="29"
+            fontFamily="'Playfair Display', Didot, 'Bodoni MT', Georgia, serif"
+            fontWeight="800"
+            fontSize="26"
             letterSpacing="-0.02em"
-            fill="currentColor"
+            fill="#111111"
           >
             wint
           </text>
@@ -975,22 +1089,36 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
 
     case 'truly-madly':
       return (
-        <svg viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <svg viewBox="0 0 170 46" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          {/* Multi-layered translucent gradient circle with white 'tm' */}
           <g transform="translate(6, 6)">
-            <circle cx="15" cy="15" r="14" fill="#ec4899" opacity="0.8" />
-            <circle cx="20" cy="15" r="10" fill="#0284c7" opacity="0.8" />
-            <text x="16" y="20" textAnchor="middle" fontFamily="sans-serif" fontWeight="900" fontSize="10" fill="#ffffff">tm</text>
+            <circle cx="17" cy="17" r="16" fill="#e5007d" />
+            <circle cx="13" cy="14" r="13" fill="#6d28d9" opacity="0.7" />
+            <circle cx="21" cy="19" r="12" fill="#009fe3" opacity="0.8" />
+            <text
+              x="17"
+              y="22"
+              textAnchor="middle"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              fontWeight="800"
+              fontSize="12"
+              letterSpacing="-0.04em"
+              fill="#ffffff"
+            >
+              tm
+            </text>
           </g>
+          {/* truly in cyan, madly in magenta */}
           <text
-            x="44"
-            y="28"
+            x="48"
+            y="29"
             fontFamily="system-ui, -apple-system, sans-serif"
             fontWeight="800"
-            fontSize="18"
+            fontSize="20"
             letterSpacing="-0.03em"
-            fill="#0284c7"
+            fill="#009fe3"
           >
-            truly<tspan fill="#ec4899">madly</tspan>
+            truly<tspan fill="#e5007d">madly</tspan>
           </text>
         </svg>
       );
@@ -1316,85 +1444,142 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
     // =========================================================================
     case 'stride':
       return (
-        <svg viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(8, 8)">
-            <rect x="0" y="2" width="20" height="20" rx="3" fill="#1a382d" />
-            <path d="M5 16L9 9L15 16" stroke="#c59e5f" strokeWidth="2.5" strokeLinecap="round" />
+        <svg viewBox="0 0 180 46" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          {/* 7 rising stride bars */}
+          <g transform="translate(6, 6)">
+            <rect x="0" y="14" width="3" height="14" rx="1.2" fill="#152e85" />
+            <rect x="4.5" y="10" width="3" height="18" rx="1.2" fill="#152e85" />
+            <rect x="9" y="6" width="3" height="22" rx="1.2" fill="#1b3ea8" />
+            <rect x="13.5" y="2" width="3" height="26" rx="1.2" fill="#254ec8" />
+            <rect x="18" y="7" width="3" height="21" rx="1.2" fill="#1b3ea8" />
+            <rect x="22.5" y="12" width="3" height="16" rx="1.2" fill="#152e85" />
+            <rect x="27" y="16" width="3" height="12" rx="1.2" fill="#152e85" />
           </g>
           <text
-            x="36"
-            y="25"
+            x="42"
+            y="23"
             fontFamily="system-ui, -apple-system, sans-serif"
             fontWeight="800"
-            fontSize="18"
-            letterSpacing="0.04em"
-            fill="currentColor"
+            fontSize="14"
+            letterSpacing="0.06em"
+            fill="#152e85"
           >
-            STRIDE
+            STRIDE VENTURES
+          </text>
+          <text
+            x="43"
+            y="35"
+            fontFamily="system-ui, -apple-system, sans-serif"
+            fontWeight="500"
+            fontSize="8"
+            letterSpacing="0.08em"
+            fill="#556885"
+          >
+            www.strideventures.in
           </text>
         </svg>
       );
 
     case 'rpsg':
       return (
-        <svg viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(8, 8)">
-            <circle cx="12" cy="12" r="10" fill="#c59e5f" />
-            <text x="12" y="16" textAnchor="middle" fill="#10241d" fontWeight="900" fontSize="11">RP</text>
+        <svg viewBox="0 0 170 48" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          <defs>
+            <linearGradient id="rpsg-grad" x1="0" y1="0" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+              <stop stopColor="#c0006b" />
+              <stop offset="1" stopColor="#ff5a00" />
+            </linearGradient>
+          </defs>
+          {/* Origami paper airplane chevron */}
+          <g transform="translate(8, 9)">
+            <polygon points="2,28 16,4 28,18 16,14" fill="url(#rpsg-grad)" />
+            <polygon points="16,4 28,18 20,28" fill="#d93b00" opacity="0.8" />
           </g>
-          <text
-            x="36"
-            y="25"
-            fontFamily="system-ui, -apple-system, sans-serif"
-            fontWeight="800"
-            fontSize="17"
-            letterSpacing="0.04em"
-            fill="currentColor"
-          >
-            RPSG VENTURES
-          </text>
+          {/* RPSG Ventures text */}
+          <g transform="translate(46, 0)">
+            <text
+              x="0"
+              y="24"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              fontWeight="900"
+              fontSize="19"
+              letterSpacing="0.04em"
+              fill="#311b3e"
+            >
+              RPSG
+            </text>
+            <line x1="0" y1="28" x2="88" y2="28" stroke="#311b3e" strokeWidth="0.8" opacity="0.4" />
+            <text
+              x="0"
+              y="38"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              fontWeight="600"
+              fontSize="9"
+              letterSpacing="0.32em"
+              fill="#311b3e"
+            >
+              VENTURES
+            </text>
+          </g>
         </svg>
       );
 
     case 'fbc':
       return (
-        <svg viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(8, 8)">
-            <rect x="2" y="2" width="20" height="20" rx="2" fill="#10241d" />
-            <path d="M7 8H17M7 13H14M7 18H11" stroke="#c59e5f" strokeWidth="2" strokeLinecap="round" />
-          </g>
+        <svg viewBox="0 0 160 48" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          <rect width="160" height="48" rx="6" fill="#0b1636" />
           <text
-            x="36"
-            y="25"
-            fontFamily="system-ui, -apple-system, sans-serif"
-            fontWeight="800"
-            fontSize="17"
+            x="80"
+            y="34"
+            textAnchor="middle"
+            fontFamily="system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+            fontWeight="900"
+            fontSize="28"
             letterSpacing="0.06em"
-            fill="currentColor"
+            fill="#f7c427"
           >
-            FBC VENTURES
+            FBC
           </text>
         </svg>
       );
 
     case 'gemba':
       return (
-        <svg viewBox="0 0 160 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-          <g transform="translate(8, 8)">
-            <circle cx="12" cy="12" r="10" stroke="#c59e5f" strokeWidth="2.5" fill="none" />
-            <circle cx="12" cy="12" r="4" fill="#10241d" />
+        <svg viewBox="0 0 180 48" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+          {/* GEMBA CAPITAL */}
+          <g transform="translate(6, 6)">
+            <text
+              x="0"
+              y="20"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              fontWeight="800"
+              fontSize="16"
+              letterSpacing="0.02em"
+            >
+              <tspan fill="#1e44af">GEM</tspan>
+              <tspan fill="#15735b">BA</tspan>
+              <tspan dx="5" fill="#1e3a8a">CAPITAL</tspan>
+            </text>
+            {/* Accent mark on top right of CAPITAL */}
+            <path
+              d="M148 7L154 7L154 13"
+              stroke="#2563eb"
+              strokeWidth="2"
+              fill="none"
+              strokeLinecap="round"
+            />
+            {/* Tagline */}
+            <text
+              x="2"
+              y="32"
+              fontFamily="system-ui, -apple-system, sans-serif"
+              fontWeight="500"
+              fontSize="8"
+              letterSpacing="0.22em"
+              fill="#64748b"
+            >
+              LISTEN • INVEST • NURTURE
+            </text>
           </g>
-          <text
-            x="36"
-            y="25"
-            fontFamily="system-ui, -apple-system, sans-serif"
-            fontWeight="800"
-            fontSize="17"
-            letterSpacing="0.06em"
-            fill="currentColor"
-          >
-            GEMBA CAPITAL
-          </text>
         </svg>
       );
 
