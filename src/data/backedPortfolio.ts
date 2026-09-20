@@ -654,7 +654,7 @@ export const BACKED_PORTFOLIO: BackedEntity[] = [
   },
   {
     id: 'fbc-fund',
-    name: 'FBC Venture Partners',
+    name: 'Founder Bank Capital',
     type: 'Fund',
     category: 'Institutional Fund Alliances',
     sector: 'High-Conviction Founders-First Seed Fund',

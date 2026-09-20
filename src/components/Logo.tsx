@@ -148,16 +148,17 @@ export const Logo: React.FC<LogoProps> = ({
         }}
       />
 
-      {/* Brand Wordmark */}
+      {/* Brand Wordmark. The full lockup wraps to three lines on a phone and
+          balloons the header, so drop the tagline and tighten tracking there. */}
       <div className="flex flex-col justify-center">
         <span
-          className="font-serif text-base sm:text-lg lg:text-xl font-medium tracking-[0.14em] uppercase transition-colors leading-none"
+          className="font-serif text-base sm:text-lg lg:text-xl font-medium tracking-[0.08em] sm:tracking-[0.14em] uppercase transition-colors leading-none whitespace-nowrap"
           style={{ color: textColor }}
         >
           SSA Family Holdings
         </span>
         <span
-          className="text-[9px] sm:text-[10px] tracking-[0.24em] font-light uppercase mt-1 transition-colors"
+          className="hidden sm:block text-[9px] sm:text-[10px] tracking-[0.24em] font-light uppercase mt-1 transition-colors whitespace-nowrap"
           style={{ color: isLight ? '#d2ded8' : '#345749' }}
         >
           Long-Term Capital | Enduring Value

@@ -8,15 +8,6 @@ export const ContactPage: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
         {/* Header */}
         <div className="max-w-3xl mb-14 sm:mb-16">
-          <motion.span
-            initial={{ opacity: 0, y: -6 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-xs uppercase tracking-[0.24em] font-medium text-[#c59e5f] mb-3 block"
-          >
-            COMMUNICATIONS | DIRECTORY
-          </motion.span>
-
           <motion.div
             initial={{ scaleX: 0, originX: 0 }}
             animate={{ scaleX: 1 }}
@@ -31,7 +22,7 @@ export const ContactPage: React.FC = () => {
             transition={{ duration: 0.75, delay: 0.22, ease: [0.16, 1, 0.3, 1] }}
             className="font-serif text-5xl sm:text-6xl lg:text-[72px] font-normal leading-[1.06] text-[#10241d] tracking-tight mb-6"
           >
-            Contact &amp; Coordinates
+            Get in touch
           </motion.h1>
 
           <motion.p
@@ -40,7 +31,8 @@ export const ContactPage: React.FC = () => {
             transition={{ duration: 0.7, delay: 0.32, ease: [0.16, 1, 0.3, 1] }}
             className="text-base sm:text-lg text-[#333333] font-light leading-relaxed"
           >
-            Principal headquarters for SSA Family Holdings, our premier chartered accountancy practice Sanjay Satpal and Associates, hospitality division, and institutional investment offices in New Delhi.
+            Everything runs out of one office in Lajpat Nagar. If you are a founder raising, a
+            fund manager, or a client of the practice, the fastest route is the number below.
           </motion.p>
         </div>
 
@@ -51,10 +43,10 @@ export const ContactPage: React.FC = () => {
             <div className="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-[#1a382d] to-[#10241d]" />
             <div>
               <span className="text-[11px] font-mono tracking-widest uppercase text-[#c59e5f] block mb-2">
-                PRINCIPAL HEADQUARTERS
+                Lajpat Nagar, New Delhi
               </span>
               <h2 className="font-serif text-3xl sm:text-4xl text-[#10241d] mb-6">
-                New Delhi Office
+                The office
               </h2>
 
               <div className="space-y-6 text-[#333333]">
@@ -65,7 +57,7 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-1">
-                      Office Location
+                      Address
                     </span>
                     <p className="font-serif text-xl sm:text-2xl text-[#10241d]">
                       Building no. - 5, 3rd floor, and terrace, Ring Rd
@@ -83,7 +75,7 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-1">
-                      Direct Telephone Line
+                      Telephone
                     </span>
                     <a
                       href="tel:01146580000"
@@ -92,7 +84,7 @@ export const ContactPage: React.FC = () => {
                       011-46580000
                     </a>
                     <p className="text-xs text-neutral-400 mt-0.5 font-light">
-                      Available Monday to Friday | 09:30 to 18:30 IST
+                      Monday to Friday, 09:30–18:30 IST
                     </p>
                   </div>
                 </div>
@@ -104,7 +96,7 @@ export const ContactPage: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-[11px] font-mono uppercase tracking-wider text-neutral-400 block mb-1">
-                      General Institutional Inquiries
+                      Email
                     </span>
                     <a
                       href="mailto:contact@ssassociate.co.in"
@@ -118,7 +110,7 @@ export const ContactPage: React.FC = () => {
             </div>
 
             <div className="pt-8 border-t border-neutral-200 mt-8 text-xs font-mono text-neutral-400 tracking-wider uppercase">
-              VISITS STRICTLY BY PRIOR INSTITUTIONAL APPOINTMENT
+              Visits by appointment
             </div>
           </div>
 
@@ -131,14 +123,14 @@ export const ContactPage: React.FC = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <ShieldCheck size={18} className="text-[#c59e5f]" />
                   <span className="text-[11px] font-mono uppercase tracking-widest text-[#c59e5f]">
-                    CA PRACTICE (SANJAY SATPAL AND ASSOCIATES)
+                    The practice
                   </span>
                 </div>
                 <h3 className="font-serif text-xl text-[#10241d] mb-1">
-                  Search &amp; Seizure | Tax Advisory
+                  Sanjay Satpal and Associates
                 </h3>
                 <p className="text-xs text-[#555555] font-light leading-relaxed mb-4">
-                  Section 132 defense, survey litigation, corporate taxation, and statutory audit representation.
+                  Search and seizure defence, survey litigation, corporate tax and audit.
                 </p>
                 <a
                   href="https://www.ssassociate.co.in/resource/home.aspx"
@@ -147,7 +139,7 @@ export const ContactPage: React.FC = () => {
                   className="group/link inline-flex items-center gap-1.5 text-xs font-medium text-[#1a382d] hover:text-[#c59e5f] uppercase tracking-wider transition-colors"
                 >
                   <span className="relative overflow-hidden pb-0.5">
-                    Visit SSAssociate.co.in
+                    ssassociate.co.in
                     <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#c59e5f] transition-all duration-300 group-hover/link:w-full" />
                   </span>
                   <ExternalLink size={12} className="text-[#c59e5f] transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -162,14 +154,14 @@ export const ContactPage: React.FC = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <Building2 size={18} className="text-[#c59e5f]" />
                   <span className="text-[11px] font-mono uppercase tracking-widest text-[#c59e5f]">
-                    HOSPITALITY DIVISION
+                    Hotels
                   </span>
                 </div>
                 <h3 className="font-serif text-xl text-[#10241d] mb-1">
-                  Hotels &amp; Resorts Management
+                  Delhi/NCR and Jim Corbett
                 </h3>
                 <p className="text-xs text-[#555555] font-light leading-relaxed">
-                  Turnkey development, asset construction, and management of NCR boutique hotels and Jim Corbett luxury resorts.
+                  Boutique hotels and eco-resorts we built and still run ourselves.
                 </p>
               </div>
             </div>
@@ -181,14 +173,14 @@ export const ContactPage: React.FC = () => {
                 <div className="flex items-center gap-3 mb-2">
                   <TrendingUp size={18} className="text-[#c59e5f]" />
                   <span className="text-[11px] font-mono uppercase tracking-widest text-[#c59e5f]">
-                    INVESTMENT ARM
+                    Investments
                   </span>
                 </div>
                 <h3 className="font-serif text-xl text-[#10241d] mb-1">
-                  Fund Partnerships &amp; Venture Investments
+                  Founders, LPs and fund queries
                 </h3>
                 <p className="text-xs text-[#555555] font-light leading-relaxed mb-4">
-                  Direct angel allocations, Seafund GP fund queries, SGRE Real Estate AIFs, and institutional LP relations.
+                  Pitches, Seafund and SGRE fund enquiries, and LP relations.
                 </p>
                 <div className="flex items-center gap-4 text-xs">
                   <a
@@ -198,7 +190,7 @@ export const ContactPage: React.FC = () => {
                     className="group/link inline-flex items-center gap-1 text-[#1a382d] hover:text-[#c59e5f] font-medium transition-colors"
                   >
                     <span className="relative overflow-hidden pb-0.5">
-                      Seafund.in
+                      seafund.in
                       <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#c59e5f] transition-all duration-300 group-hover/link:w-full" />
                     </span>
                     <ExternalLink size={11} className="transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />
@@ -211,7 +203,7 @@ export const ContactPage: React.FC = () => {
                     className="group/link inline-flex items-center gap-1 text-[#1a382d] hover:text-[#c59e5f] font-medium transition-colors"
                   >
                     <span className="relative overflow-hidden pb-0.5">
-                      SGRE.in
+                      sgre.in
                       <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#c59e5f] transition-all duration-300 group-hover/link:w-full" />
                     </span>
                     <ExternalLink size={11} className="transition-transform duration-300 group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5" />

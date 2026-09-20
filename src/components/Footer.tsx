@@ -27,14 +27,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="cursor-pointer"
             />
             <p className="mt-4 text-xs sm:text-sm text-[#9cb5a8] max-w-sm font-light leading-relaxed">
-              Chartered accountancy, turnkey hospitality construction &amp; management, and institutional multi-asset capital allocation since 1990.
+              A family office in New Delhi. Tax practice, hotels, and our own capital &mdash;
+              since 1990.
             </p>
           </div>
 
           {/* Right: Institutional Coordinates with Delhi Address & Phone */}
           <div className="text-left sm:text-right text-xs sm:text-sm text-neutral-300 font-light space-y-1.5">
             <p className="text-[#c59e5f] text-xs uppercase tracking-[0.2em] font-medium mb-2">
-              Principal Office
+              New Delhi
             </p>
             <p id="footer-address-line1" className="text-[#e2ece6]">
               Building no. - 5, 3rd floor, and terrace, Ring Rd
@@ -115,19 +116,13 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#c59e5f] transition-all duration-500 ease-out group-hover:w-full" />
             </button>
           </div>
-          <span className="text-[11px] text-[#c59e5f]/75 tracking-[0.2em]">
-            <span className="mr-3">DISCRETION</span>
-            <span className="mr-3">INTEGRITY</span>
-            <span>STEWARDSHIP</span>
-          </span>
         </div>
 
         {/* Bottom Bar: Copyright & Motto */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7d9b8c]">
           <p>© {new Date().getFullYear()} SSA Family Holdings. All rights reserved.</p>
           <p className="tracking-[0.24em] uppercase text-[10px] text-[#c59e5f]/90 font-light">
-            <span className="mr-4">NEW DELHI</span>
-            <span>FOUNDED 1990</span>
+            New Delhi &middot; Founded 1990
           </p>
         </div>
       </div>

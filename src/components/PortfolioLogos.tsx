@@ -84,26 +84,26 @@ export const PortfolioLogo: React.FC<LogoProps> = ({ logoType, className = 'w-fu
 
     case 'ola-electric':
       return (
-        <svg viewBox="0 0 170 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <svg viewBox="0 0 200 44" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
           <text
-            x="10"
+            x="8"
             y="30"
             fontFamily="system-ui, -apple-system, sans-serif"
             fontWeight="900"
-            fontSize="32"
+            fontSize="30"
             letterSpacing="0.04em"
             fill="currentColor"
           >
             OLA
           </text>
-          <rect x="94" y="10" width="1.5" height="24" fill="#c59e5f" />
+          <rect x="86" y="11" width="1.5" height="22" fill="#c59e5f" />
           <text
-            x="104"
+            x="96"
             y="26"
             fontFamily="system-ui, -apple-system, sans-serif"
             fontWeight="600"
-            fontSize="12"
-            letterSpacing="0.22em"
+            fontSize="11"
+            letterSpacing="0.16em"
             fill="#10241d"
           >
             ELECTRIC
