@@ -43,8 +43,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           >
             <p>
               Sanjay Kumar Gupta opened a chartered accountancy firm in New Delhi in 1990. The work
-              that defined it — defending clients through Income Tax search and seizure
-              proceedings — is unglamorous, adversarial and entirely about judgement under
+              that defined it, defending clients through Income Tax search and seizure
+              proceedings, is unglamorous, adversarial and entirely about judgement under
               pressure. Thirty-five years later it is still the firm&rsquo;s reputation.
             </p>
             <p>
@@ -161,7 +161,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 <p className="text-xs sm:text-sm text-[#8caba1] font-light leading-relaxed">
                   Three ways in. We buy land and companies directly off the balance sheet, commit
                   as a limited partner to funds run by managers we rate, and run our own funds as
-                  GP — Seafund in deeptech, SGRE in real estate.
+                  GP: Seafund in deeptech, SGRE in real estate.
                 </p>
               </div>
 

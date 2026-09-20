@@ -20,7 +20,7 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     name: 'Sanjay Kumar Gupta',
     role: 'Group Managing Director',
     focus: 'Tax practice & hospitality',
-    bio: 'Fellow Chartered Accountant. Founded the firm in 1990 and built its search and seizure practice into what the group is still best known for. Also runs the hospitality side end to end \u2014 sites, construction and operations across NCR and Jim Corbett \u2014 and sits on the governance side of the SGRE real estate funds.',
+    bio: 'Fellow Chartered Accountant. Founded the firm in 1990 and built its search and seizure practice into what the group is still best known for. Also runs the hospitality side end to end, from sites and construction through to operations across NCR and Jim Corbett, and sits on the governance side of the SGRE real estate funds.',
     linkedin: 'https://www.linkedin.com/in/sanjay-kumar-gupta',
     image: sanjayImg,
   },
@@ -37,7 +37,7 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     name: 'Kushagra Gupta',
     role: 'Head of New Projects',
     focus: 'Angel investing & emerging tech',
-    bio: 'Handles the early-stage book \u2014 50+ angel cheques, syndication, and first conversations with founders. Concentrated in AI, deeptech, defence and healthcare. Also responsible for dragging the group\'s own operating companies onto better technology.',
+    bio: 'Handles the early-stage book: 50+ angel cheques, syndication, and first conversations with founders. Concentrated in AI, deeptech, defence and healthcare. Also responsible for dragging the group\'s own operating companies onto better technology.',
     linkedin: 'https://www.linkedin.com/in/kushagra-gupta',
     image: kushagraImg,
     pedigreeLogos: ['uiuc', 'tennr'],
@@ -50,7 +50,7 @@ export const TIMELINE_MILESTONES: Milestone[] = [
     title: 'The firm opens',
     category: 'Tax practice',
     description:
-      'Sanjay Satpal and Associates is founded in New Delhi. The practice builds its name on Section 132 search and seizure defence — the cases most firms would rather not take — and adds dispute resolution and corporate advisory around it.',
+      'Sanjay Satpal and Associates is founded in New Delhi. The practice builds its name on Section 132 search and seizure defence, the cases most firms would rather not take, and adds dispute resolution and corporate advisory around it.',
     highlight: 'Still the group\u2019s founding business',
   },
   {
@@ -88,15 +88,15 @@ export const TIMELINE_MILESTONES: Milestone[] = [
   {
     year: '2022',
     title: 'Seafund',
-    category: 'GP \u2014 venture',
+    category: 'GP / venture',
     description:
       'Co-founded Seafund, a $30M SEBI-registered Category II AIF backing early deeptech: AI and ML, semiconductors, robotics and spacetech. The first time the group managed outside capital.',
     highlight: 'seafund.in',
   },
   {
-    year: '2024\u20132025',
+    year: '2024-2025',
     title: 'SGRE Fund I and Fund 2',
-    category: 'GP \u2014 real estate',
+    category: 'GP / real estate',
     description:
       'Two more SEBI-registered Category II AIFs, this time in real estate: structured debt, equity and turnaround financing for residential and commercial assets, including distressed situations.',
     highlight: '\u20b9450 Cr closed, targeting \u20b92,000 Cr \u00b7 sgre.in',

@@ -137,7 +137,7 @@ export const InvestmentsPage: React.FC<InvestmentsPageProps> = ({ onNavigate }) 
                 </h3>
                 <p className="text-xs sm:text-sm text-[#555555] font-light leading-relaxed mb-6">
                   Structured debt, equity and turnaround financing into residential and commercial
-                  assets — including situations other lenders have walked away from. Underwritten
+                  assets, including situations other lenders have walked away from. Underwritten
                   by people who have spent thirty years reading Indian balance sheets.
                 </p>
 
@@ -191,7 +191,7 @@ export const InvestmentsPage: React.FC<InvestmentsPageProps> = ({ onNavigate }) 
                 </span>
 
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#10241d] mb-2">
-                  Seafund &mdash; $30M, early deeptech
+                  Seafund: $30M, early deeptech
                 </h3>
 
                 <p className="text-xs sm:text-sm text-[#444444] font-light leading-relaxed">

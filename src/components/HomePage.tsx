@@ -35,9 +35,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.75, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
-              className="font-serif text-4xl sm:text-5xl lg:text-[58px] xl:text-[62px] font-normal leading-[1.08] text-[#10241d] tracking-tight"
+              className="font-serif text-4xl sm:text-5xl lg:text-[52px] xl:text-[56px] font-normal leading-[1.1] text-[#10241d] tracking-tight"
             >
-              A New Delhi family office, thirty-five years in.
+              Three businesses. One balance sheet. Since 1990.
             </motion.h1>
 
             <motion.p
@@ -47,9 +47,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="text-base sm:text-lg text-[#333333] font-light leading-relaxed max-w-lg mt-6"
             >
-              We run a chartered accountancy practice, we build and operate hotels, and we invest
-              our own balance sheet across land, private companies and public markets. Three
-              businesses, one family, since 1990.
+              A New Delhi family office. A chartered accountancy practice, boutique hotels we
+              build and run ourselves, and our own capital in land, private companies and public
+              markets.
             </motion.p>
 
             <motion.div
@@ -87,7 +87,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img
                   id="hero-office-image"
                   src={IMAGES.heroOffice}
-                  alt="SSA Family Holdings office, New Delhi"
+                  alt="The Secretariat buildings on Raisina Hill, New Delhi"
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
                   loading="eager"
                   referrerPolicy="no-referrer"
@@ -149,7 +149,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <div className="aspect-[4/5] sm:aspect-[3/4] overflow-hidden relative">
                   <img
                     src={IMAGES.heritageBoardroom}
-                    alt="Architectural view representing the group's long-term holdings"
+                    alt="A 15th-century tomb in Lodhi Gardens, New Delhi"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     loading="lazy"
                     referrerPolicy="no-referrer"
@@ -253,7 +253,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
             id="pillars-section-title"
             className="font-serif text-4xl sm:text-5xl lg:text-[54px] font-normal text-[#10241d] tracking-tight"
           >
-            Three businesses
+            What we run
           </h2>
           <div className="w-16 h-[2px] bg-[#c59e5f] mx-auto mt-4" />
           <p className="text-sm sm:text-base text-[#555555] font-light mt-4 max-w-xl mx-auto leading-relaxed">

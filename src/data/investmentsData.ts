@@ -2,7 +2,7 @@ export interface LPFundPosition {
   id: string;
   name: string;
   firm: string;
-  /** Matches a file in src/assets/logos/ — see BrandLogo. */
+  /** Matches a file in src/assets/logos/. See BrandLogo. */
   logoType: string;
   fundType: string;
   vintage: string;

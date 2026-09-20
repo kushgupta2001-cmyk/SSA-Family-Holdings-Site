@@ -1,5 +1,5 @@
-import heroOfficeImg from '../assets/images/family_office_hero_1789897989357.jpg';
-import qutubMinarImg from '../assets/images/qutub-minar-delhi.jpg';
+import raisinaHillImg from '../assets/images/delhi-secretariat-raisina-hill.jpg';
+import lodhiTombImg from '../assets/images/lodhi-gardens-tomb-delhi.jpg';
 import boardroomImg from '../assets/images/mission_vision_1789412827047.jpg';
 import resortImg from '../assets/images/hospitality_resort_1789412842667.jpg';
 
@@ -33,7 +33,7 @@ export const STRATEGIC_PILLARS: AssetPillar[] = [
     title: 'Hotels & Resorts',
     since: 'Delhi/NCR and Jim Corbett',
     description:
-      'We design, build and then run them ourselves — a small chain of boutique hotels across Delhi/NCR and wilderness eco-resorts on the edge of Jim Corbett National Park. Construction through to housekeeping stays in-house.',
+      'We design, build and then run them ourselves. A small chain of boutique hotels across Delhi/NCR and wilderness eco-resorts on the edge of Jim Corbett National Park. Construction through to housekeeping stays in-house.',
     ctaLabel: 'About the hotels',
     imageUrl: resortImg,
     imageAlt: 'Eco-resort at dusk in the Jim Corbett foothills',
@@ -59,7 +59,7 @@ export interface HomeMetric {
 }
 
 /**
- * Four figures, each measuring something the others do not — deliberately no overlap
+ * Four figures, each measuring something the others do not. Deliberately no overlap
  * between "investments made" (positions) and "companies reached" (names touched).
  */
 export const HOME_METRICS: HomeMetric[] = [
@@ -76,7 +76,7 @@ export const HOME_METRICS: HomeMetric[] = [
   {
     value: '4',
     label: 'Funds we manage',
-    detail: 'SEBI-registered AIFs — Seafund, and the SGRE real estate funds.',
+    detail: 'SEBI-registered AIFs: Seafund, and the SGRE real estate funds.',
   },
   {
     value: '1990',
@@ -86,10 +86,10 @@ export const HOME_METRICS: HomeMetric[] = [
 ];
 
 export const IMAGES = {
-  // Hero: the group's own boardroom, New Delhi
-  heroOffice: heroOfficeImg,
-  // Mission & Vision: Qutub Minar — Delhi, and things built to last
-  heritageBoardroom: qutubMinarImg,
+  // Hero: the Secretariat buildings on Raisina Hill, New Delhi (CC0)
+  heroOffice: raisinaHillImg,
+  // Mission & Vision: Lodhi Gardens tomb, Delhi. Things built to last (CC0)
+  heritageBoardroom: lodhiTombImg,
   // "No fund clock": boardroom interior
   stableCapital: boardroomImg,
   // Investments: market data (no local equivalent)

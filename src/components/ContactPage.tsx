@@ -84,7 +84,7 @@ export const ContactPage: React.FC = () => {
                       011-46580000
                     </a>
                     <p className="text-xs text-neutral-400 mt-0.5 font-light">
-                      Monday to Friday, 09:30–18:30 IST
+                      Monday to Friday, 09:30 to 18:30 IST
                     </p>
                   </div>
                 </div>

@@ -27,7 +27,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               className="cursor-pointer"
             />
             <p className="mt-4 text-xs sm:text-sm text-[#9cb5a8] max-w-sm font-light leading-relaxed">
-              A family office in New Delhi. Tax practice, hotels, and our own capital &mdash;
+              A family office in New Delhi. Tax practice, hotels, and our own capital,
               since 1990.
             </p>
           </div>
