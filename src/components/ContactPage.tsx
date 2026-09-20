@@ -99,10 +99,10 @@ export const ContactPage: React.FC = () => {
                       Email
                     </span>
                     <a
-                      href="mailto:contact@ssassociate.co.in"
+                      href="mailto:agam@ssafamilyholdings.com"
                       className="font-sans text-base sm:text-lg text-[#1a382d] hover:text-[#c59e5f] transition-colors font-medium underline underline-offset-4"
                     >
-                      contact@ssassociate.co.in
+                      agam@ssafamilyholdings.com
                     </a>
                   </div>
                 </div>

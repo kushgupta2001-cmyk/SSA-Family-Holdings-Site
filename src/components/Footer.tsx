@@ -53,10 +53,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </p>
             <p id="footer-email">
               <a
-                href="mailto:contact@ssassociate.co.in"
+                href="mailto:agam@ssafamilyholdings.com"
                 className="hover:text-[#c59e5f] transition-colors"
               >
-                contact@ssassociate.co.in
+                agam@ssafamilyholdings.com
               </a>
             </p>
           </div>
