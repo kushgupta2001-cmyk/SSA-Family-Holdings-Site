@@ -282,9 +282,8 @@ export const InvestmentsPage: React.FC<InvestmentsPageProps> = ({ onNavigate }) 
                     />
                   </div>
 
-                  <div className="flex items-center justify-between text-[10px] text-neutral-400 font-mono uppercase mb-2">
+                  <div className="text-[10px] text-neutral-400 font-mono uppercase mb-2">
                     <span>{lp.fundType}</span>
-                    <span>{lp.vintage}</span>
                   </div>
 
                   <h4 className="font-serif text-xl text-[#10241d] mb-3">{lp.name}</h4>
