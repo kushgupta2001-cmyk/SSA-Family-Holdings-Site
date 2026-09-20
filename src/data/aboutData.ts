@@ -1,4 +1,7 @@
 import { LeadershipMember } from '../types';
+import sanjayImg from '../assets/images/Sanjay.jpg';
+import agamImg from '../assets/images/Agam.jpg';
+import kushagraImg from '../assets/images/Kushagra.jpg';
 
 export interface Milestone {
   year: string;
@@ -10,8 +13,6 @@ export interface Milestone {
 
 export interface ExtendedLeadershipMember extends LeadershipMember {
   pedigreeLogos?: Array<'deloitte' | 'microsoft' | 'northwestern' | 'uiuc' | 'tennr'>;
-  defaultFilename?: string;
-  initials: string;
 }
 
 export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
@@ -21,9 +22,7 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     focus: 'Tax practice & hospitality',
     bio: 'Fellow Chartered Accountant. Founded the firm in 1990 and built its search and seizure practice into what the group is still best known for. Also runs the hospitality side end to end \u2014 sites, construction and operations across NCR and Jim Corbett \u2014 and sits on the governance side of the SGRE real estate funds.',
     linkedin: 'https://www.linkedin.com/in/sanjay-kumar-gupta',
-    image: '/Sanjay.jpg',
-    defaultFilename: 'Sanjay.jpg',
-    initials: 'SKG',
+    image: sanjayImg,
   },
   {
     name: 'Agam Gupta',
@@ -31,9 +30,7 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     focus: 'Funds, venture & public markets',
     bio: 'Runs allocation across venture, real estate and public equities. General Partner at Seafund and at the SGRE real estate AIFs, and the person who decides which outside managers the family commits to as an LP.',
     linkedin: 'https://www.linkedin.com/in/agam-gupta',
-    image: '/Agam.png',
-    defaultFilename: 'Agam.png',
-    initials: 'AG',
+    image: agamImg,
     pedigreeLogos: ['deloitte', 'microsoft', 'northwestern'],
   },
   {
@@ -42,9 +39,7 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     focus: 'Angel investing & emerging tech',
     bio: 'Handles the early-stage book \u2014 50+ angel cheques, syndication, and first conversations with founders. Concentrated in AI, deeptech, defence and healthcare. Also responsible for dragging the group\'s own operating companies onto better technology.',
     linkedin: 'https://www.linkedin.com/in/kushagra-gupta',
-    image: '/Kushagra.png',
-    defaultFilename: 'Kushagra.png',
-    initials: 'KG',
+    image: kushagraImg,
     pedigreeLogos: ['uiuc', 'tennr'],
   },
 ];
