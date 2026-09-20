@@ -23,18 +23,24 @@ function portraitUploadPlugin(): Plugin {
                 return;
               }
               const cleanName = path.basename(filename);
-              const publicDir = path.resolve(process.cwd(), 'public');
-              if (!fs.existsSync(publicDir)) {
-                fs.mkdirSync(publicDir, { recursive: true });
-              }
-              const filePath = path.join(publicDir, cleanName);
+              const lowerName = cleanName.toLowerCase();
               const base64Data = base64.replace(/^data:image\/\w+;base64,/, '');
-              fs.writeFileSync(filePath, Buffer.from(base64Data, 'base64'));
-              
-              // Also sync to dist if it exists
-              const distDir = path.resolve(process.cwd(), 'dist');
-              if (fs.existsSync(distDir)) {
-                fs.writeFileSync(path.join(distDir, cleanName), Buffer.from(base64Data, 'base64'));
+              const buffer = Buffer.from(base64Data, 'base64');
+
+              const dirs = [
+                path.resolve(process.cwd(), 'public'),
+                path.resolve(process.cwd(), 'dist'),
+                path.resolve(process.cwd(), 'src/assets/images'),
+              ];
+
+              for (const dir of dirs) {
+                if (!fs.existsSync(dir)) {
+                  fs.mkdirSync(dir, { recursive: true });
+                }
+                fs.writeFileSync(path.join(dir, cleanName), buffer);
+                if (lowerName !== cleanName) {
+                  fs.writeFileSync(path.join(dir, lowerName), buffer);
+                }
               }
 
               res.setHeader('Content-Type', 'application/json');

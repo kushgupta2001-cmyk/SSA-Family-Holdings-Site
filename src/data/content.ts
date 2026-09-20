@@ -41,8 +41,8 @@ export const STRATEGIC_PILLARS: AssetPillar[] = [
 ];
 
 export const IMAGES = {
-  // Hero: Executive meeting in glass-walled boardroom
-  heroOffice: '/mario-gogh-VBLHICVh-lI-unsplash.jpg',
+  // Hero: Ultra-prestigious family investment office and executive suite in New Delhi
+  heroOffice: '/assets/images/family_office_hero.jpg',
   // Mission & Vision: Authentic architectural heritage monument of New Delhi (Qutub Minar, Est. 1990 legacy)
   heritageBoardroom: '/assets/images/qutub-minar-delhi.jpg',
   // Stable Capital Platform: Dramatic stone architectural interior

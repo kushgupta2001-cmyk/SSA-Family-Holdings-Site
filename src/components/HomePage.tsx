@@ -92,7 +92,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img
                   id="hero-office-image"
                   src={IMAGES.heroOffice}
-                  alt="SSA Family Holdings leadership and investment team collaborating in boardroom"
+                  alt="SSA Family Holdings private family investment office and executive suite in New Delhi"
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
                   loading="eager"
                   referrerPolicy="no-referrer"
@@ -122,13 +122,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
           </div>
           <div className="flex flex-col items-start border-l-2 border-[#c59e5f]/60 pl-4 sm:pl-5">
             <span className="font-serif text-6xl sm:text-7xl lg:text-7xl xl:text-8xl text-[#10241d] block font-black tracking-tighter leading-none">
-              50+
+              350+
             </span>
             <span className="text-xs uppercase tracking-[0.18em] text-[#c59e5f] font-semibold mt-2.5 block">
-              Startups Backed
+              Companies Backed
             </span>
             <p className="text-xs text-neutral-600 font-light mt-1 leading-relaxed">
-              Direct angels and venture syndicate co-investments.
+              Backed across direct venture, Seafund, &amp; institutional alliances.
             </p>
           </div>
           <div className="flex flex-col items-start border-l-2 border-[#c59e5f]/60 pl-4 sm:pl-5">

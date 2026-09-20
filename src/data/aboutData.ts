@@ -10,8 +10,8 @@ export interface Milestone {
 
 export interface ExtendedLeadershipMember extends LeadershipMember {
   pedigreeLogos?: Array<'deloitte' | 'microsoft' | 'northwestern' | 'uiuc' | 'tennr'>;
-  fallbackImage?: string;
   defaultFilename?: string;
+  initials: string;
 }
 
 export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
@@ -22,8 +22,8 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     bio: 'Fellow Chartered Accountant with 35+ years of practice. Founded Sanjay Satpal and Associates in 1990, establishing it as a premier Delhi firm specializing in Income Tax Search and Seizure operations. Directs the group\'s turnkey hospitality development, construction, and resort operations across NCR and Jim Corbett, as well as real estate AIF fund governance.',
     linkedin: 'https://www.linkedin.com/in/sanjay-kumar-gupta',
     image: '/Sanjay.jpg',
-    fallbackImage: '/assets/images/sanjay_gupta_headshot_1789546431341.jpg',
     defaultFilename: 'Sanjay.jpg',
+    initials: 'SKG',
   },
   {
     name: 'Agam Gupta',
@@ -32,8 +32,8 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     bio: 'Leads multi-asset capital allocation across private venture capital, real estate funds, and public equities. General Partner at Seafund ($30M deeptech VC fund) and SGRE Real Estate AIF Funds, while actively managing strategic LP commitments in Tier-1 venture debt and venture capital funds.',
     linkedin: 'https://www.linkedin.com/in/agam-gupta',
     image: '/Agam.png',
-    fallbackImage: '/assets/images/agam_gupta_headshot_1789546382261.jpg',
     defaultFilename: 'Agam.png',
+    initials: 'AG',
     pedigreeLogos: ['deloitte', 'microsoft', 'northwestern'],
   },
   {
@@ -43,8 +43,8 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     bio: 'Heads new technology initiatives, early-stage venture syndication, and angel investments across 50+ startups. Focuses on deeptech, artificial intelligence, defense, and healthcare innovation, while steering institutional technology integration across the family office\'s operating entities.',
     linkedin: 'https://www.linkedin.com/in/kushagra-gupta',
     image: '/Kushagra.png',
-    fallbackImage: '/assets/images/kushagra_gupta_headshot_1789546404352.jpg',
     defaultFilename: 'Kushagra.png',
+    initials: 'KG',
     pedigreeLogos: ['uiuc', 'tennr'],
   },
 ];

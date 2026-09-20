@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Linkedin, Camera, Check, UploadCloud } from 'lucide-react';
+import { Linkedin, Camera, Check, UploadCloud, User } from 'lucide-react';
 import { ExtendedLeadershipMember } from '../data/aboutData';
 import { PedigreeLogo } from './PedigreeLogos';
 
@@ -11,8 +11,7 @@ interface LeaderCardProps {
 
 export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
   const storageKey = `sgre_portrait_${member.name}`;
-  
-  // State for image source
+
   const [currentSrc, setCurrentSrc] = useState<string>(() => {
     if (typeof window !== 'undefined') {
       const saved = localStorage.getItem(storageKey);
@@ -28,6 +27,7 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
     return false;
   });
 
+  const [hasError, setHasError] = useState<boolean>(false);
   const [isDragging, setIsDragging] = useState(false);
   const [isUploading, setIsUploading] = useState(false);
   const [uploadSuccess, setUploadSuccess] = useState(false);
@@ -35,13 +35,27 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    // Check if localStorage has a saved portrait
     const saved = localStorage.getItem(storageKey);
     if (saved) {
       setCurrentSrc(saved);
       setIsCustomPhoto(true);
+      setHasError(false);
     }
   }, [storageKey]);
+
+  useEffect(() => {
+    const handlePortraitSync = (e: any) => {
+      if (e.detail?.name === member.name && e.detail?.dataUrl) {
+        setCurrentSrc(e.detail.dataUrl);
+        setIsCustomPhoto(true);
+        setHasError(false);
+        setUploadSuccess(true);
+        setTimeout(() => setUploadSuccess(false), 3500);
+      }
+    };
+    window.addEventListener('portrait-updated', handlePortraitSync);
+    return () => window.removeEventListener('portrait-updated', handlePortraitSync);
+  }, [member.name]);
 
   const handleFileProcess = (file: File) => {
     if (!file.type.startsWith('image/')) {
@@ -62,10 +76,11 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
       // Immediately display and save in browser
       setCurrentSrc(dataUrl);
       setIsCustomPhoto(true);
+      setHasError(false);
       try {
         localStorage.setItem(storageKey, dataUrl);
       } catch {
-        // Ignore quota limits if image is large
+        // Ignore storage quota limits
       }
 
       // Also persist to server in public directory
@@ -125,20 +140,17 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
   };
 
   const handleImageError = () => {
-    // If the main image path (e.g., /Sanjay.jpg) fails:
+    // If original case path fails, try lowercase variant once
     if (!triedAlternative) {
       setTriedAlternative(true);
-      // Try lowercase variant first
       const lower = member.image.toLowerCase();
       if (lower !== member.image) {
         setCurrentSrc(lower);
         return;
       }
     }
-    // Fall back to the guaranteed asset image if file isn't uploaded yet
-    if (member.fallbackImage && currentSrc !== member.fallbackImage) {
-      setCurrentSrc(member.fallbackImage);
-    }
+    // If not found, show distinguished monogram placeholder instead of fake AI faces
+    setHasError(true);
   };
 
   return (
@@ -148,9 +160,9 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
       transition={{ duration: 0.6, delay: index * 0.12, ease: [0.16, 1, 0.3, 1] }}
-      className={`flex flex-col p-8 transition-transform duration-500 hover:-translate-y-1 relative group ${
-        index === 1 
-          ? 'bg-[#f2f6f4] lg:mt-16' // Staggered middle column
+      className={`flex flex-col p-7 sm:p-8 transition-transform duration-500 hover:-translate-y-1 relative group ${
+        index === 1
+          ? 'bg-[#f2f6f4] lg:mt-12' // Subtle staggered middle column
           : 'bg-white shadow-[0_4px_24px_rgba(26,56,45,0.03)] hover:shadow-[0_16px_60px_rgba(26,56,45,0.08)]'
       }`}
     >
@@ -171,33 +183,58 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
           aria-label={`Upload photo for ${member.name}`}
         />
 
-        {/* Portrait Container with Drag & Drop */}
+        {/* 
+          Restrained, Elegant Portrait Frame:
+          Sized conservatively (max-w-[250px], h-[270px]) so square crops (Agam, Kushagra)
+          and vertical shots (Sanjay) fit naturally without excessive cropping or blur.
+          No tinting, no color overlay, completely unedited original photo presentation.
+        */}
         <div
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
           onDrop={handleDrop}
-          className={`overflow-hidden aspect-[4/5] mb-6 relative rounded-sm ${
-            index !== 1 ? 'p-1 bg-white shadow-sm' : ''
-          } ${isDragging ? 'ring-2 ring-[#c59e5f] ring-offset-2' : ''}`}
+          className={`w-full max-w-[250px] mx-auto h-[260px] sm:h-[280px] mb-6 relative rounded-xs overflow-hidden bg-[#f4f7f5] border border-[#e2ece6] shadow-[0_2px_12px_rgba(26,56,45,0.04)] flex items-center justify-center ${
+            isDragging ? 'ring-2 ring-[#c59e5f] ring-offset-2' : ''
+          }`}
         >
-          <div className="absolute inset-0 bg-[#1a382d]/10 mix-blend-multiply opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none" />
+          {!hasError ? (
+            <img
+              src={currentSrc}
+              alt={`${member.name} - ${member.role}`}
+              className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-[1.02]"
+              loading="eager"
+              referrerPolicy="no-referrer"
+              onError={handleImageError}
+            />
+          ) : (
+            /* Distinguished Executive Placeholder (Zero AI Hallucinations) */
+            <div
+              onClick={() => fileInputRef.current?.click()}
+              className="w-full h-full flex flex-col items-center justify-center p-6 text-center cursor-pointer bg-gradient-to-b from-[#f9fbf9] to-[#ebf3ee] hover:bg-[#edf5f0] transition-colors"
+              title={`Click or drop ${member.defaultFilename} here`}
+            >
+              <div className="w-16 h-16 rounded-full border border-[#c59e5f]/50 bg-white flex items-center justify-center text-[#10241d] font-serif text-2xl font-normal mb-3 shadow-xs">
+                {member.initials}
+              </div>
+              <span className="font-serif text-sm font-medium text-[#10241d] mb-1">
+                {member.name}
+              </span>
+              <span className="text-[11px] font-mono uppercase tracking-wider text-[#9d7736] mb-3">
+                {member.defaultFilename}
+              </span>
+              <span className="inline-flex items-center gap-1 text-[11px] text-[#1a382d] bg-white border border-[#1a382d]/20 px-2.5 py-1 rounded shadow-2xs font-medium hover:border-[#c59e5f]">
+                <Camera size={12} className="text-[#c59e5f]" />
+                <span>Select or Drop Photo</span>
+              </span>
+            </div>
+          )}
 
-          {/* Actual Image */}
-          <img
-            src={currentSrc}
-            alt={`${member.name} - ${member.role}`}
-            className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-105"
-            loading="lazy"
-            referrerPolicy="no-referrer"
-            onError={handleImageError}
-          />
-
-          {/* Drag & Drop Overlay */}
+          {/* Drag & Drop Hover Overlay */}
           {isDragging && (
-            <div className="absolute inset-0 bg-[#1a382d]/85 text-white z-20 flex flex-col items-center justify-center p-4 text-center backdrop-blur-xs">
-              <UploadCloud className="w-10 h-10 text-[#c59e5f] animate-bounce mb-2" />
+            <div className="absolute inset-0 bg-[#10241d]/90 text-white z-20 flex flex-col items-center justify-center p-4 text-center backdrop-blur-xs">
+              <UploadCloud className="w-9 h-9 text-[#c59e5f] animate-bounce mb-2" />
               <span className="text-xs font-semibold uppercase tracking-wider">
-                Drop to set official photo
+                Drop to attach {member.defaultFilename}
               </span>
             </div>
           )}
@@ -212,30 +249,30 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
                 className="absolute top-3 left-3 right-3 bg-[#10241d] text-white px-3 py-1.5 rounded text-[11px] font-medium flex items-center justify-center gap-1.5 z-25 shadow-lg border border-[#c59e5f]/30"
               >
                 <Check size={13} className="text-[#86bc25]" />
-                <span>Original photo loaded</span>
+                <span>Original photo active</span>
               </motion.div>
             )}
           </AnimatePresence>
 
-          {/* Subtle Custom Photo Indicator Badge */}
-          {isCustomPhoto && !uploadSuccess && (
-            <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-xs text-[#1a382d] text-[10px] font-mono font-medium px-2 py-0.5 rounded border border-[#1a382d]/15 z-20 shadow-xs">
-              Original Photo
+          {/* Subtle Indicator Badge */}
+          {isCustomPhoto && !uploadSuccess && !hasError && (
+            <div className="absolute top-2.5 right-2.5 bg-white/95 backdrop-blur-xs text-[#1a382d] text-[10px] font-mono font-medium px-2 py-0.5 rounded border border-[#1a382d]/15 z-20 shadow-xs">
+              Official Photo
             </div>
           )}
 
-          {/* Interactive Upload Button Overlay (Appears on Hover) */}
-          <div className="absolute bottom-3 right-3 z-20 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-300">
+          {/* Change / Upload Button (Reveals on Hover) */}
+          <div className="absolute bottom-2.5 right-2.5 z-20 opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-300">
             <button
               type="button"
               id={`upload-btn-${member.name.toLowerCase().replace(/\s+/g, '-')}`}
               onClick={() => fileInputRef.current?.click()}
               disabled={isUploading}
-              className="inline-flex items-center gap-1.5 px-2.5 py-1.5 bg-[#10241d]/90 hover:bg-[#10241d] text-white text-[11px] font-medium rounded shadow-md backdrop-blur-sm border border-white/20 hover:border-[#c59e5f] transition-all cursor-pointer"
-              title="Click or drag-and-drop to upload your exact photo"
+              className="inline-flex items-center gap-1.5 px-2.5 py-1 bg-[#10241d]/90 hover:bg-[#10241d] text-white text-[10px] font-medium rounded shadow-md backdrop-blur-sm border border-white/20 hover:border-[#c59e5f] transition-all cursor-pointer"
+              title={`Click to set ${member.defaultFilename}`}
             >
-              <Camera size={13} className="text-[#c59e5f]" />
-              <span>{isUploading ? 'Loading...' : isCustomPhoto ? 'Change Photo' : 'Upload Photo'}</span>
+              <Camera size={11} className="text-[#c59e5f]" />
+              <span>{isUploading ? 'Loading...' : isCustomPhoto ? 'Update' : 'Attach'}</span>
             </button>
           </div>
         </div>
