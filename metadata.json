@@ -1,0 +1,6 @@
+{
+  "name": "SSA Family Holdings",
+  "description": "A private family investment office focused on disciplined capital allocation across private markets, public securities, and real estate.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-brand-green: #1a382d;
+  --color-brand-green-dark: #10241d;
+  --color-brand-green-deep: #0b1a14;
+  --color-brand-green-light: #295444;
+  --color-brand-green-tint: #f3f7f5;
+  --color-brand-gold: #c59e5f;
+  --color-brand-gold-light: #e0c590;
+  --color-brand-gold-dark: #9d7736;
+  --color-brand-gold-tint: #faf6ee;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+}
+
+.font-serif-display {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+/* Subtle Gold Linear Shimmer */
+.gold-divider-gradient {
+  background: linear-gradient(90deg, #9d7736 0%, #dcc18b 50%, #9d7736 100%);
+}
+
+
+
