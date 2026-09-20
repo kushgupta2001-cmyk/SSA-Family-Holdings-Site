@@ -1,5 +1,4 @@
 import boardroomDelhiImg from '../assets/images/boardroom-delhi-meeting.jpg';
-import boardroomTableImg from '../assets/images/boardroom-table-window.jpg';
 import boardroomSilhouetteImg from '../assets/images/boardroom-silhouette.jpg';
 import resortImg from '../assets/images/hospitality_resort_1789412842667.jpg';
 
@@ -88,8 +87,6 @@ export const HOME_METRICS: HomeMetric[] = [
 export const IMAGES = {
   // Hero: the Delhi boardroom
   heroOffice: boardroomDelhiImg,
-  // Mission & Vision: boardroom table in window light
-  heritageBoardroom: boardroomTableImg,
   // "No fund clock": silhouette, sits behind an 85% dark gradient as texture
   stableCapital: boardroomSilhouetteImg,
   // Investments: market data (no local equivalent)

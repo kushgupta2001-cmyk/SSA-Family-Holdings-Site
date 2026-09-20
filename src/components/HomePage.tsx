@@ -134,105 +134,68 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               What we are trying to do
             </h2>
             <div className="w-16 h-[2px] bg-[#c59e5f] mt-4" />
+            <p className="font-serif text-lg sm:text-xl text-[#1a382d] italic leading-snug mt-6 max-w-xl">
+              &ldquo;We invest our own money, on our own timeline. That is the whole
+              advantage.&rdquo;
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-            {/* Visual */}
-            <div className="lg:col-span-5 relative">
-              <motion.div
-                initial={{ opacity: 0, scale: 0.96 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.85, ease: [0.16, 1, 0.3, 1] }}
-                className="relative overflow-hidden shadow-[0_20px_50px_rgba(26,56,45,0.12)] border-2 border-[#1a382d]/20 bg-[#10241d]"
-              >
-                <div className="aspect-[4/5] sm:aspect-[3/4] overflow-hidden relative">
-                  <img
-                    src={IMAGES.heritageBoardroom}
-                    alt="Boardroom table in window light"
-                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    loading="lazy"
-                    referrerPolicy="no-referrer"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b1a14]/35 via-transparent to-transparent" />
-
-                  <div className="absolute top-4 left-4 border border-[#c59e5f]/60 px-3 py-1.5 bg-[#10241d]/80 backdrop-blur-sm">
-                    <span className="text-[10px] font-mono tracking-[0.24em] text-[#dcc18b] uppercase">
-                      Est. 1990 &middot; New Delhi
-                    </span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+            {/* Mission */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-white p-7 sm:p-8 relative shadow-[0_8px_30px_rgba(26,56,45,0.04)] border border-[#e2ece6] hover:border-[#c59e5f]/50 transition-colors"
+            >
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 bg-[#f0f5f2] border border-[#c59e5f]/40 flex items-center justify-center">
+                    <ShieldCheck size={18} className="text-[#c59e5f]" />
                   </div>
-
-                  <div className="absolute bottom-4 left-4 right-4 p-4 bg-white/95 backdrop-blur-sm border-l-2 border-[#c59e5f] shadow-md">
-                    <p className="font-serif text-base text-[#10241d] italic leading-snug">
-                      &ldquo;We invest our own money, on our own timeline. That is the whole
-                      advantage.&rdquo;
-                    </p>
-                  </div>
+                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#10241d] tracking-tight">
+                    Mission
+                  </h3>
                 </div>
-              </motion.div>
+                <span className="text-3xl font-serif text-[#e2ece6] font-bold">01</span>
+              </div>
 
-              <div className="absolute -bottom-3 -right-3 w-32 h-32 bg-[#e8efe9] -z-10" />
-              <div className="absolute -top-3 -left-3 w-28 h-28 border border-[#c59e5f]/40 -z-10" />
-            </div>
+              <p className="text-base text-[#444444] font-light leading-relaxed">
+                Back technical founders early and stay useful after the cheque clears. Defend
+                clients through the hardest tax proceedings in India without taking shortcuts.
+                Build hotels we intend to own for decades rather than flip. The three are
+                different trades, but they reward the same thing: being right slowly.
+              </p>
+            </motion.div>
 
-            {/* Text */}
-            <div className="lg:col-span-7 flex flex-col gap-6">
-              {/* Mission */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-                className="bg-white p-7 sm:p-8 relative shadow-[0_8px_30px_rgba(26,56,45,0.04)] border border-[#e2ece6] hover:border-[#c59e5f]/50 transition-colors"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 bg-[#f0f5f2] border border-[#c59e5f]/40 flex items-center justify-center">
-                      <ShieldCheck size={18} className="text-[#c59e5f]" />
-                    </div>
-                    <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#10241d] tracking-tight">
-                      Mission
-                    </h3>
+            {/* Vision */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: '-40px' }}
+              transition={{ duration: 0.7, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
+              className="bg-[#f3f7f5] p-7 sm:p-8 relative shadow-[0_8px_30px_rgba(26,56,45,0.04)] border border-[#d6e5dd] hover:border-[#1a382d] transition-colors"
+            >
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-9 h-9 bg-white border border-[#1a382d]/30 flex items-center justify-center">
+                    <TrendingUp size={18} className="text-[#1a382d]" />
                   </div>
-                  <span className="text-3xl font-serif text-[#e2ece6] font-bold">01</span>
+                  <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#10241d] tracking-tight">
+                    Vision
+                  </h3>
                 </div>
+                <span className="text-3xl font-serif text-[#d6e5dd] font-bold">02</span>
+              </div>
 
-                <p className="text-base text-[#444444] font-light leading-relaxed">
-                  Back technical founders early and stay useful after the cheque clears. Defend
-                  clients through the hardest tax proceedings in India without taking shortcuts.
-                  Build hotels we intend to own for decades rather than flip. The three are
-                  different trades, but they reward the same thing: being right slowly.
-                </p>
-              </motion.div>
-
-              {/* Vision */}
-              <motion.div
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: '-40px' }}
-                transition={{ duration: 0.7, delay: 0.12, ease: [0.16, 1, 0.3, 1] }}
-                className="bg-[#f3f7f5] p-7 sm:p-8 relative shadow-[0_8px_30px_rgba(26,56,45,0.04)] border border-[#d6e5dd] hover:border-[#1a382d] transition-colors"
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-3">
-                    <div className="w-9 h-9 bg-white border border-[#1a382d]/30 flex items-center justify-center">
-                      <TrendingUp size={18} className="text-[#1a382d]" />
-                    </div>
-                    <h3 className="font-serif text-2xl sm:text-3xl font-normal text-[#10241d] tracking-tight">
-                      Vision
-                    </h3>
-                  </div>
-                  <span className="text-3xl font-serif text-[#d6e5dd] font-bold">02</span>
-                </div>
-
-                <p className="text-base text-[#444444] font-light leading-relaxed">
-                  To compound across generations instead of fund cycles. The practice gives us
-                  regulatory judgement, the hotels give us hard assets that pay through a downturn,
-                  and the investment book gives us growth. Each one funds the patience the other
-                  two need. We would like all three to still be here in fifty years.
-                </p>
-              </motion.div>
-            </div>
+              <p className="text-base text-[#444444] font-light leading-relaxed">
+                To compound across generations instead of fund cycles. The practice gives us
+                regulatory judgement, the hotels give us hard assets that pay through a downturn,
+                and the investment book gives us growth. Each one funds the patience the other
+                two need. We would like all three to still be here in fifty years.
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
