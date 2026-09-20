@@ -106,9 +106,8 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                 className="group relative bg-white p-6 sm:p-7 flex flex-col justify-between h-[220px] transition-all duration-300 hover:-translate-y-1 border border-neutral-200/80 shadow-[0_2px_12px_rgba(26,56,45,0.03)] hover:shadow-[0_16px_36px_rgba(26,56,45,0.08)] hover:border-[#c59e5f]/40"
               >
                 {/* Top: Classification */}
-                <div className="flex items-center justify-between text-[10px] font-mono tracking-wider uppercase text-neutral-400 relative z-10">
+                <div className="text-[10px] font-mono tracking-wider uppercase text-neutral-400 relative z-10">
                   <span className="text-[#c59e5f] font-semibold">{item.type}</span>
-                  <span>{item.vintage}</span>
                 </div>
 
                 {/* Centre: brand artwork, desaturated until hover so the wall reads as one set */}
