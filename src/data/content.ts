@@ -18,7 +18,7 @@ export const STRATEGIC_PILLARS: AssetPillar[] = [
     id: 'ca-firm',
     category: 'Practice',
     title: 'Sanjay Satpal and Associates',
-    since: 'Chartered accountancy · New Delhi · since 1990',
+    since: 'Chartered accountancy · New Delhi · since 1993',
     description:
       'A Delhi tax practice known for one thing in particular: defending clients through Income Tax search and seizure proceedings under Section 132. Alongside that, dispute resolution, corporate tax advisory and statutory audit.',
     ctaLabel: 'About the practice',
@@ -78,7 +78,7 @@ export const HOME_METRICS: HomeMetric[] = [
     detail: 'SEBI-registered AIFs: Seafund, and the SGRE real estate funds.',
   },
   {
-    value: '1990',
+    value: '1993',
     label: 'Founded',
     detail: 'Still run from the same office, by the same family.',
   },

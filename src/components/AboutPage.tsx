@@ -42,10 +42,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             className="space-y-4 text-base sm:text-lg text-[#333333] font-light leading-relaxed"
           >
             <p>
-              Sanjay Kumar Gupta opened a chartered accountancy firm in New Delhi in 1990. The work
+              Sanjay Kumar Gupta opened a chartered accountancy firm in New Delhi in 1993. The work
               that defined it, defending clients through Income Tax search and seizure
               proceedings, is unglamorous, adversarial and entirely about judgement under
-              pressure. Thirty-five years later it is still the firm&rsquo;s reputation.
+              pressure. Thirty-three years later it is still the firm&rsquo;s reputation.
             </p>
             <p>
               What came after grew out of it. Retained earnings went into public equities, then
@@ -206,7 +206,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
       >
         <div className="text-center max-w-2xl mx-auto mb-14 sm:mb-16">
           <h2 className="font-serif text-4xl sm:text-5xl lg:text-[52px] font-normal text-[#10241d] tracking-tight">
-            1990 to now
+            1993 to now
           </h2>
           <div className="w-16 h-[2px] bg-[#c59e5f] mx-auto mt-4" />
         </div>

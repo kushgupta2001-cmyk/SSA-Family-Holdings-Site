@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             />
             <p className="mt-4 text-xs sm:text-sm text-[#9cb5a8] max-w-sm font-light leading-relaxed">
               A family office in New Delhi. Tax practice, hotels, and our own capital,
-              since 1990.
+              since 1993.
             </p>
           </div>
 
@@ -38,10 +38,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               New Delhi
             </p>
             <p id="footer-address-line1" className="text-[#e2ece6]">
-              Building no. - 5, 3rd floor, and terrace, Ring Rd
-            </p>
-            <p id="footer-address-line2" className="text-[#e2ece6]">
-              Nirmal Puri, Nirmal Colony, Block 4, Lajpat Nagar 4, New Delhi 110024
+              Building no. - 5, 3rd floor, and terrace, Lajpat Nagar 4, New Delhi 110024
             </p>
             <p id="footer-telephone" className="pt-1">
               <a
@@ -122,7 +119,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#7d9b8c]">
           <p>© {new Date().getFullYear()} SSA Family Holdings. All rights reserved.</p>
           <p className="tracking-[0.24em] uppercase text-[10px] text-[#c59e5f]/90 font-light">
-            New Delhi &middot; Founded 1990
+            New Delhi &middot; Founded 1993
           </p>
         </div>
       </div>

@@ -37,7 +37,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               transition={{ duration: 0.75, delay: 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="font-serif text-4xl sm:text-5xl lg:text-[52px] xl:text-[56px] font-normal leading-[1.1] text-[#10241d] tracking-tight"
             >
-              Three businesses. One balance sheet. Since 1990.
+              Three businesses. One balance sheet. Since 1993.
             </motion.h1>
 
             <motion.p

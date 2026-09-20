@@ -194,7 +194,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                 </div>
                 <div>
                   <div className="font-serif text-3xl sm:text-4xl text-[#c59e5f] font-normal">
-                    Since 1990
+                    Since 1993
                   </div>
                   <div className="text-xs uppercase tracking-wider text-neutral-400 mt-1">
                     Same family, same office

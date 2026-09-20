@@ -60,10 +60,10 @@ export const ContactPage: React.FC = () => {
                       Address
                     </span>
                     <p className="font-serif text-xl sm:text-2xl text-[#10241d]">
-                      Building no. - 5, 3rd floor, and terrace, Ring Rd
+                      Building no. - 5, 3rd floor, and terrace
                     </p>
                     <p className="text-sm text-[#555555] font-light mt-0.5">
-                      Nirmal Puri, Nirmal Colony, Block 4, Lajpat Nagar 4, New Delhi 110024
+                      Lajpat Nagar 4, New Delhi 110024
                     </p>
                   </div>
                 </div>

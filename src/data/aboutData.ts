@@ -20,7 +20,7 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
     name: 'Sanjay Kumar Gupta',
     role: 'Group Managing Director',
     focus: 'Tax practice & hospitality',
-    bio: 'Fellow Chartered Accountant. Founded the firm in 1990 and built its search and seizure practice into what the group is still best known for. Also runs the hospitality side end to end, from sites and construction through to operations across NCR and Jim Corbett, and sits on the governance side of the SGRE real estate funds.',
+    bio: 'Fellow Chartered Accountant. Founded the firm in 1993 and built its search and seizure practice into what the group is still best known for. Also runs the hospitality side end to end, from sites and construction through to operations across NCR and Jim Corbett, and sits on the governance side of the SGRE real estate funds.',
     image: sanjayImg,
   },
   {
@@ -45,7 +45,7 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
 
 export const TIMELINE_MILESTONES: Milestone[] = [
   {
-    year: '1990',
+    year: '1993',
     title: 'The firm opens',
     category: 'Tax practice',
     description:
