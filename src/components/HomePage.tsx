@@ -87,7 +87,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img
                   id="hero-office-image"
                   src={IMAGES.heroOffice}
-                  alt="The Secretariat buildings on Raisina Hill, New Delhi"
+                  alt="A board meeting in silhouette"
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
                   loading="eager"
                   referrerPolicy="no-referrer"
@@ -149,12 +149,12 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <div className="aspect-[4/5] sm:aspect-[3/4] overflow-hidden relative">
                   <img
                     src={IMAGES.heritageBoardroom}
-                    alt="A 15th-century tomb in Lodhi Gardens, New Delhi"
+                    alt="A team meeting in a daylit office"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     loading="lazy"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b1a14]/80 via-transparent to-black/10" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0b1a14]/35 via-transparent to-transparent" />
 
                   <div className="absolute top-4 left-4 border border-[#c59e5f]/60 px-3 py-1.5 bg-[#10241d]/80 backdrop-blur-sm">
                     <span className="text-[10px] font-mono tracking-[0.24em] text-[#dcc18b] uppercase">

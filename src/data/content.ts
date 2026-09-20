@@ -1,5 +1,5 @@
-import raisinaHillImg from '../assets/images/delhi-secretariat-raisina-hill.jpg';
-import lodhiTombImg from '../assets/images/lodhi-gardens-tomb-delhi.jpg';
+import boardroomSilhouetteImg from '../assets/images/boardroom-silhouette.jpg';
+import officeMeetingImg from '../assets/images/office-meeting-daylight.jpg';
 import boardroomImg from '../assets/images/mission_vision_1789412827047.jpg';
 import resortImg from '../assets/images/hospitality_resort_1789412842667.jpg';
 
@@ -86,10 +86,10 @@ export const HOME_METRICS: HomeMetric[] = [
 ];
 
 export const IMAGES = {
-  // Hero: the Secretariat buildings on Raisina Hill, New Delhi (CC0)
-  heroOffice: raisinaHillImg,
-  // Mission & Vision: Lodhi Gardens tomb, Delhi. Things built to last (CC0)
-  heritageBoardroom: lodhiTombImg,
+  // Hero: boardroom in silhouette
+  heroOffice: boardroomSilhouetteImg,
+  // Mission & Vision: meeting in daylight
+  heritageBoardroom: officeMeetingImg,
   // "No fund clock": boardroom interior
   stableCapital: boardroomImg,
   // Investments: market data (no local equivalent)
