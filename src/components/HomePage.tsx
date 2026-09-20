@@ -87,7 +87,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <img
                   id="hero-office-image"
                   src={IMAGES.heroOffice}
-                  alt="A board meeting in silhouette"
+                  alt="A board meeting in the New Delhi office"
                   className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-[1.02]"
                   loading="eager"
                   referrerPolicy="no-referrer"
@@ -149,7 +149,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
                 <div className="aspect-[4/5] sm:aspect-[3/4] overflow-hidden relative">
                   <img
                     src={IMAGES.heritageBoardroom}
-                    alt="A team meeting in a daylit office"
+                    alt="Boardroom table in window light"
                     className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     loading="lazy"
                     referrerPolicy="no-referrer"

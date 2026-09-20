@@ -62,8 +62,9 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
             transition={{ duration: 0.7, delay: 0.26, ease: [0.16, 1, 0.3, 1] }}
             className="text-base sm:text-lg text-[#444444] font-light leading-relaxed max-w-2xl"
           >
-            Some we wrote the first cheque into. Some came through Seafund, the deeptech fund we
-            manage. Some through the funds we back as a limited partner. A selection is below.
+            Some of the companies we have backed. A few we wrote the first cheque into, some came
+            through Seafund, the deeptech fund we manage, and others through the funds we back as a
+            limited partner.
           </motion.p>
         </div>
 
@@ -138,7 +139,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
               className="group relative bg-gradient-to-br from-[#10241d] to-[#18392d] text-white p-6 sm:p-7 flex flex-col justify-between h-[220px] transition-all duration-300 hover:-translate-y-1 border border-[#c59e5f]/40 shadow-[0_10px_25px_rgba(16,36,29,0.2)]"
             >
               <div className="flex items-center justify-between text-[10px] font-mono tracking-wider uppercase text-[#c59e5f]">
-                <span className="font-semibold">Plus the rest</span>
+                <span className="font-semibold">A selection</span>
               </div>
 
               <div className="my-auto py-2 text-center">
@@ -146,7 +147,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                   and many more
                 </span>
                 <span className="text-[11px] text-[#dcc18b] font-light mt-1.5 block">
-                  Not every holding is public
+                  These are some of the companies we have backed
                 </span>
               </div>
 
@@ -155,7 +156,7 @@ export const PortfolioPage: React.FC<PortfolioPageProps> = ({ onNavigate }) => {
                   onClick={() => onNavigate('contact')}
                   className="text-xs text-[#dcc18b] font-medium hover:text-white inline-flex items-center gap-1 cursor-pointer transition-colors"
                 >
-                  <span>Get in touch</span>
+                  <span>Contact us to know more</span>
                   <ArrowRight className="w-3 h-3" />
                 </button>
               </div>

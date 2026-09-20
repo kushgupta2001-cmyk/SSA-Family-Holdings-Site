@@ -1,6 +1,6 @@
+import boardroomDelhiImg from '../assets/images/boardroom-delhi-meeting.jpg';
+import boardroomTableImg from '../assets/images/boardroom-table-window.jpg';
 import boardroomSilhouetteImg from '../assets/images/boardroom-silhouette.jpg';
-import officeMeetingImg from '../assets/images/office-meeting-daylight.jpg';
-import boardroomImg from '../assets/images/mission_vision_1789412827047.jpg';
 import resortImg from '../assets/images/hospitality_resort_1789412842667.jpg';
 
 export interface AssetPillar {
@@ -86,12 +86,12 @@ export const HOME_METRICS: HomeMetric[] = [
 ];
 
 export const IMAGES = {
-  // Hero: boardroom in silhouette
-  heroOffice: boardroomSilhouetteImg,
-  // Mission & Vision: meeting in daylight
-  heritageBoardroom: officeMeetingImg,
-  // "No fund clock": boardroom interior
-  stableCapital: boardroomImg,
+  // Hero: the Delhi boardroom
+  heroOffice: boardroomDelhiImg,
+  // Mission & Vision: boardroom table in window light
+  heritageBoardroom: boardroomTableImg,
+  // "No fund clock": silhouette, sits behind an 85% dark gradient as texture
+  stableCapital: boardroomSilhouetteImg,
   // Investments: market data (no local equivalent)
   publicMarkets:
     'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=85',
