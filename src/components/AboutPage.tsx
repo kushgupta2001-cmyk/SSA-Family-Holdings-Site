@@ -42,14 +42,14 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             className="space-y-4 text-base sm:text-lg text-[#333333] font-light leading-relaxed"
           >
             <p>
-              Sanjay Kumar Gupta opened a chartered accountancy firm in New Delhi in 1993. The work
+              Sanjay Kumar Gupta started a chartered accountancy firm in New Delhi in 1993. The work
               that defined it, defending clients through Income Tax search and seizure
               proceedings, is unglamorous, adversarial and entirely about judgement under
               pressure. Thirty-three years later it is still the firm&rsquo;s reputation.
             </p>
             <p>
               What came after grew out of it. Retained earnings went into public equities, then
-              land, then hotels the family built and chose to keep operating. In 2014 the next
+              land, then hotels and resorts the family built and chose to keep operating. In 2014 the next
               generation started writing angel cheques; by 2022 the group was managing funds for
               outside investors as well as its own. SSA Family Holdings is what holds those three
               businesses together.
@@ -91,7 +91,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
                 </span>
 
                 <p className="text-xs sm:text-sm text-[#555555] font-light leading-relaxed">
-                  Section 132 search and seizure defence, survey actions, and appellate litigation
+                  Section 132 search, seizure, survey actions, and appellate litigation
                   before CIT(A) and ITAT. Alongside the contentious work: corporate tax advisory,
                   transaction structuring and statutory audit for closely held Indian businesses.
                 </p>

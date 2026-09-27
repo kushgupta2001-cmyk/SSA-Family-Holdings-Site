@@ -32,7 +32,7 @@ export const STRATEGIC_PILLARS: AssetPillar[] = [
     title: 'Hotels & Resorts',
     since: 'Delhi/NCR and Jim Corbett',
     description:
-      'We design, build and then run them ourselves. A small chain of boutique hotels across Delhi/NCR and wilderness eco-resorts on the edge of Jim Corbett National Park. Construction through to housekeeping stays in-house.',
+      'We design, build and then run them ourselves. A chain of boutique hotels across Delhi/NCR and wilderness eco-resorts on the edge of Jim Corbett National Park. Construction through to housekeeping stays in-house.',
     ctaLabel: 'About the hotels',
     imageUrl: resortImg,
     imageAlt: 'Eco-resort at dusk in the Jim Corbett foothills',

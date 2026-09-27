@@ -47,9 +47,9 @@ export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
               transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
               className="text-base sm:text-lg text-[#333333] font-light leading-relaxed max-w-lg mt-6"
             >
-              A New Delhi family office. A chartered accountancy practice, boutique hotels we
-              build and run ourselves, and our own capital in land, private companies and public
-              markets.
+              A New Delhi family office. A chartered accountancy practice, boutique hotels and
+              resorts we build and run ourselves, and our own capital in land, private companies
+              and public markets.
             </motion.p>
 
             <motion.div

@@ -21,6 +21,7 @@ export const REAL_ESTATE_OVERVIEW = {
       'Freehold, 100% clear title, held unlevered',
       'Warehousing and logistics sites on highway economic zones',
       'Agricultural holdings positioned ahead of urban expansion',
+      'Residential and commercial parcels of land in Delhi & NCR',
     ],
   },
   gpFunds: {

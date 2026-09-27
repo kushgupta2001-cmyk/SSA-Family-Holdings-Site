@@ -46,10 +46,10 @@ export const LEADERSHIP_TEAM: ExtendedLeadershipMember[] = [
 export const TIMELINE_MILESTONES: Milestone[] = [
   {
     year: '1993',
-    title: 'The firm opens',
+    title: 'The firm started',
     category: 'Tax practice',
     description:
-      'Sanjay Satpal and Associates is founded in New Delhi. The practice builds its name on Section 132 search and seizure defence, the cases most firms would rather not take, and adds dispute resolution and corporate advisory around it.',
+      'Sanjay Satpal and Associates is founded in New Delhi. The practice builds its name on Section 132 search and seizure actions, the cases most firms would rather not take. It also handles corporate tax advisory, transaction structuring and statutory audit cases for leading companies in India.',
     highlight: 'Still the group\u2019s founding business',
   },
   {

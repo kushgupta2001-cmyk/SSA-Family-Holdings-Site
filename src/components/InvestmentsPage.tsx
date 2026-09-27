@@ -52,7 +52,7 @@ export const InvestmentsPage: React.FC<InvestmentsPageProps> = ({ onNavigate }) 
           >
             Three books, run differently. We own land and companies outright, we commit as a
             limited partner to managers we rate, and we run our own SEBI-registered funds as GP.
-            The public equities book has been compounding since the 1990s.
+            The public equities book has been compounding since 1993.
           </motion.p>
         </div>
 
