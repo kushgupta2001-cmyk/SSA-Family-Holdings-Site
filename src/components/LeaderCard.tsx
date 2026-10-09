@@ -50,15 +50,17 @@ export const LeaderCard: React.FC<LeaderCardProps> = ({ member, index }) => {
           <span className="text-[11px] font-mono uppercase tracking-[0.2em] text-[#c59e5f] font-semibold">
             {member.role}
           </span>
-          <a
-            href={member.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${member.name} LinkedIn Profile`}
-            className="text-[#1a382d] hover:text-[#c59e5f] transition-colors p-1"
-          >
-            <Linkedin size={16} />
-          </a>
+          {member.linkedin && (
+            <a
+              href={member.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${member.name} LinkedIn Profile`}
+              className="text-[#1a382d] hover:text-[#c59e5f] transition-colors p-1"
+            >
+              <Linkedin size={16} />
+            </a>
+          )}
         </div>
 
         <h3 className="font-serif text-2xl text-[#1a382d] font-normal mb-1">

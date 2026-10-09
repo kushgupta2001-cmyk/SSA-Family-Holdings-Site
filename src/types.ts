@@ -5,7 +5,7 @@ export interface LeadershipMember {
   role: string;
   focus: string;
   bio: string;
-  linkedin: string;
+  linkedin?: string;
   image: string;
 }
 

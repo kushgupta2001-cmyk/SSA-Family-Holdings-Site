@@ -1,8 +1,14 @@
+import boardroomDelhiImg from '../assets/images/boardroom-delhi-meeting.jpg';
+import boardroomSilhouetteImg from '../assets/images/boardroom-silhouette.jpg';
+import resortImg from '../assets/images/hospitality_resort_1789412842667.jpg';
+
 export interface AssetPillar {
   id: string;
   category: string;
   title: string;
+  since: string;
   description: string;
+  ctaLabel: string;
   imageUrl: string;
   imageAlt: string;
 }
@@ -10,53 +16,80 @@ export interface AssetPillar {
 export const STRATEGIC_PILLARS: AssetPillar[] = [
   {
     id: 'ca-firm',
-    category: 'PROFESSIONAL PRACTICE',
-    title: 'CA Firm: Sanjay Satpal and Associates',
+    category: 'Practice',
+    title: 'Sanjay Satpal and Associates',
+    since: 'Chartered accountancy · New Delhi · since 1993',
     description:
-      'Tier-1 New Delhi chartered accountancy firm established in 1990, specializing in Income Tax Search and Seizure proceedings (Sec 132), dispute resolution, corporate tax advisory, and statutory audit.',
+      'A Delhi tax practice known for one thing in particular: defending clients through Income Tax search and seizure proceedings under Section 132. Alongside that, dispute resolution, corporate tax advisory and statutory audit.',
+    ctaLabel: 'About the practice',
     imageUrl:
-      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85', // Legal/documents, high-end professional
-    imageAlt: 'Legal and financial documentation representing professional advisory',
+      'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=85',
+    imageAlt: 'Legal and financial documentation representing the tax advisory practice',
   },
   {
     id: 'hospitality',
-    category: 'PHYSICAL ASSETS & HOSPITALITY',
-    title: 'Hospitality: Boutique Hotels & Resorts',
+    category: 'Hospitality',
+    title: 'Hotels & Resorts',
+    since: 'Delhi/NCR and Jim Corbett',
     description:
-      'Turnkey architectural construction, civil development, and operational management of a curated boutique hotel chain across Delhi/NCR and luxury wilderness eco-resorts in Jim Corbett National Park.',
-    imageUrl:
-      '/assets/images/luxury-boutique-resort.jpg', // Curated luxury boutique resort with infinity pool
-    imageAlt: 'Luxury boutique resort with panoramic pool and architectural sun terrace',
+      'We design, build and then run them ourselves. A chain of boutique hotels across Delhi/NCR and wilderness eco-resorts on the edge of Jim Corbett National Park. Construction through to housekeeping stays in-house.',
+    ctaLabel: 'About the hotels',
+    imageUrl: resortImg,
+    imageAlt: 'Eco-resort at dusk in the Jim Corbett foothills',
   },
   {
     id: 'investment-arm',
-    category: 'CAPITAL ALLOCATION',
-    title: 'Investment Arm: Real Estate, Private & Public',
+    category: 'Investments',
+    title: 'The Investment Arm',
+    since: 'Real estate, private and public markets',
     description:
-      'Multi-asset family office deploying balance sheet capital and institutional funds across NCR land parcels & SGRE AIFs, 50+ startup investments, Tier-1 VC/venture debt LPs, and 30+ years in public equities.',
+      'Land in the NCR corridors, 50+ direct startup investments, LP positions in Tier-1 venture and venture debt funds, GP of Seafund and the SGRE real estate AIFs, and a public equities book running since the 1990s.',
+    ctaLabel: 'Where the capital goes',
     imageUrl:
-      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85', // Modern financial district architectural tower
-    imageAlt: 'Modern architectural financial headquarters tower',
+      'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=85',
+    imageAlt: 'Modern financial district tower',
+  },
+];
+
+export interface HomeMetric {
+  value: string;
+  label: string;
+  detail: string;
+}
+
+/**
+ * Four figures, each measuring something the others do not. Deliberately no overlap
+ * between "investments made" (positions) and "companies reached" (names touched).
+ */
+export const HOME_METRICS: HomeMetric[] = [
+  {
+    value: '150+',
+    label: 'Investments made',
+    detail: 'Positions taken across land, private companies and listed equities.',
+  },
+  {
+    value: '350+',
+    label: 'Companies reached',
+    detail: 'Directly, through Seafund, and through the funds we back as an LP.',
+  },
+  {
+    value: '4',
+    label: 'Funds we manage',
+    detail: 'SEBI-registered AIFs: Seafund, and the SGRE real estate funds.',
+  },
+  {
+    value: '1993',
+    label: 'Founded',
+    detail: 'Still run from the same office, by the same family.',
   },
 ];
 
 export const IMAGES = {
-  // Hero: Prestigious modern executive conference suite with natural light and skyline perspective
-  heroOffice:
-    'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=85',
-  // Mission & Vision: Timeless monumental institutional headquarters architecture
-  heritageBoardroom:
-    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
-  // Stable Capital Platform: Modern minimalist architectural atrium
-  stableCapital:
-    'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=2000&q=85',
-  // Investments: Modern fluted vertical facade
-  privateMarketsFacade:
-    'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85',
-  // Investments: Architectural executive glass and steel civic interior
-  publicMarketsCivic:
-    'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1600&q=85',
-  // Investments: Architectural modernist facade
-  realEstateModern:
-    'https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1600&q=85',
+  // Hero: the Delhi boardroom
+  heroOffice: boardroomDelhiImg,
+  // "No fund clock": silhouette, sits behind an 85% dark gradient as texture
+  stableCapital: boardroomSilhouetteImg,
+  // Investments: market data (no local equivalent)
+  publicMarkets:
+    'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=1600&q=85',
 };
