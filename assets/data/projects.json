@@ -1,0 +1,59 @@
+{
+  "_help": "status must be 'completed' or 'development'. Photos: assets/images/real-estate/projects/<photo>.jpg, where <photo> is the 'photo' value below.",
+  "projects": [
+    {
+      "name": "[Project name]",
+      "type": "Warehousing & logistics",
+      "location": "[Location]",
+      "status": "completed",
+      "year": "[Year]",
+      "size": "[Area, sq ft]",
+      "photo": ""
+    },
+    {
+      "name": "[Project name]",
+      "type": "Farmhouses",
+      "location": "[Location]",
+      "status": "completed",
+      "year": "[Year]",
+      "size": "[Area, acres]",
+      "photo": ""
+    },
+    {
+      "name": "[Project name]",
+      "type": "Commercial",
+      "location": "[Location]",
+      "status": "completed",
+      "year": "[Year]",
+      "size": "[Area, sq ft]",
+      "photo": ""
+    },
+    {
+      "name": "[Project name]",
+      "type": "Hospitality",
+      "location": "[Location]",
+      "status": "completed",
+      "year": "[Year]",
+      "size": "[Rooms]",
+      "photo": ""
+    },
+    {
+      "name": "[Project name]",
+      "type": "Warehousing & logistics",
+      "location": "[Location]",
+      "status": "development",
+      "year": "[Expected year]",
+      "size": "[Area, sq ft]",
+      "photo": ""
+    },
+    {
+      "name": "[Project name]",
+      "type": "Hospitality",
+      "location": "[Location]",
+      "status": "development",
+      "year": "[Expected year]",
+      "size": "[Rooms]",
+      "photo": ""
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "filters": [
+    {
+      "id": "all",
+      "label": "All"
+    },
+    {
+      "id": "ssa",
+      "label": "SSA"
+    },
+    {
+      "id": "seafund",
+      "label": "Seafund"
+    },
+    {
+      "id": "sgre",
+      "label": "SG Real Estate"
+    },
+    {
+      "id": "foundation",
+      "label": "Archana Foundation"
+    }
+  ],
+  "items": [
+    {
+      "business": "sgre",
+      "tag": "SG Real Estate",
+      "title": "SGRE Fund invests ₹125 crore in two projects in NCR",
+      "source": "The Week (PTI) · May 2025",
+      "url": "https://www.theweek.in/wire-updates/business/2025/05/12/dcm34-biz-realty-sgre-fund.html"
+    },
+    {
+      "business": "seafund",
+      "tag": "Seafund",
+      "title": "VC firm Seafund eyes up to 25 deep tech investments, aims for follow-ons too",
+      "source": "Business Standard · June 2025",
+      "url": "https://www.business-standard.com/technology/tech-news/vc-firm-seafund-eyes-up-to-25-deep-tech-investments-aims-for-follow-up-too-125060400903_1.html"
+    },
+    {
+      "business": "sgre",
+      "tag": "SG Real Estate",
+      "title": "SGRE Fund raises ₹450 crore for real estate fund",
+      "source": "Venture Intelligence",
+      "url": "https://news.ventureintelligence.com/private-equity/sgre-fund-raises-rs.450-cr-for-realty-fund"
+    },
+    {
+      "business": "sgre",
+      "tag": "SG Real Estate",
+      "title": "Nirala World and Sea Fund launch SGREF, a ₹2,000 crore real estate AIF",
+      "source": "Realty n More",
+      "url": "https://realtynmore.com/nirala-world-sea-fund-launch-sgref-an-alternative-investment-fund-for-real-estate-worth-%E2%82%B92000-crore/"
+    },
+    {
+      "business": "seafund",
+      "tag": "Seafund",
+      "title": "Seafund invests in five deep tech startups as part of its sustainability thrust",
+      "source": "Outlook Startup · September 2024",
+      "url": "https://startup2.outlookindia.com/investors/early-stage-vc-seafund-invests-in-5-deeptech-start-ups-as-part-of-it-sustainability-thrust-news-9898"
+    },
+    {
+      "business": "seafund",
+      "tag": "Seafund",
+      "title": "This VC firm is betting big on deep tech startups with bigger cheques",
+      "source": "YourStory · June 2024",
+      "url": "https://yourstory.com/2024/06/vc-firm-seafund-betting-big-on-deeptech-startups"
+    },
+    {
+      "business": "foundation",
+      "tag": "Archana Foundation",
+      "title": "[Foundation programme or milestone]",
+      "source": "[Publication · Month Year]",
+      "url": "#top"
+    },
+    {
+      "business": "ssa",
+      "tag": "SSA Real Estate",
+      "title": "[Hotel or project coverage]",
+      "source": "[Publication · Month Year]",
+      "url": "#top"
+    }
+  ]
+}

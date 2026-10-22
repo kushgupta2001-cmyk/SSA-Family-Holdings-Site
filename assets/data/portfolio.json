@@ -1,0 +1,240 @@
+{
+  "filters": [
+    {
+      "id": "all",
+      "label": "All"
+    },
+    {
+      "id": "deep",
+      "label": "Deep tech & AI"
+    },
+    {
+      "id": "fin",
+      "label": "Fintech"
+    },
+    {
+      "id": "con",
+      "label": "Consumer"
+    },
+    {
+      "id": "health",
+      "label": "Healthcare"
+    },
+    {
+      "id": "ind",
+      "label": "Industrial & mobility"
+    }
+  ],
+  "companies": [
+    {
+      "name": "Calligo Technologies",
+      "description": "POSIT-based processors for high-performance computing",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "TakeMe2Space",
+      "description": "Orbital edge computing and AI nanosatellites",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "Genrobotics",
+      "description": "Sanitation and medical exoskeleton robotics",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "Redwing Aerospace",
+      "description": "Autonomous medical drone logistics",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "UptimeAI",
+      "description": "Industrial AI for predictive plant operations",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "Flam",
+      "description": "Spatial AI and mixed reality",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "Consint AI",
+      "description": "Conversational AI for enterprises",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "Clootrack",
+      "description": "AI customer experience analytics",
+      "sector": "deep",
+      "exited": false
+    },
+    {
+      "name": "Wigzo",
+      "description": "Marketing automation, acquired by Shiprocket",
+      "sector": "deep",
+      "exited": true
+    },
+    {
+      "name": "Finsall",
+      "description": "Insurance premium financing",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "AdvaRisk",
+      "description": "Credit risk and stressed asset monitoring",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "Slice",
+      "description": "Digital banking and payments",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "Upstox",
+      "description": "Digital brokerage",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "Wint Wealth",
+      "description": "Retail fixed income",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "Grip Invest",
+      "description": "Alternative fixed income",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "Strata",
+      "description": "Fractional commercial real estate",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "National Stock Exchange",
+      "description": "Market infrastructure",
+      "sector": "fin",
+      "exited": false
+    },
+    {
+      "name": "Zepto",
+      "description": "Quick commerce",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "Spinny",
+      "description": "Pre-owned car retail",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "BlueStone",
+      "description": "Fine jewellery",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "GIVA",
+      "description": "Silver and demi-fine jewellery",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "mCaffeine",
+      "description": "Personal care",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "The Souled Store",
+      "description": "Licensed apparel",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "Supertails",
+      "description": "Pet care",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "Plix",
+      "description": "Plant-based nutrition",
+      "sector": "con",
+      "exited": false
+    },
+    {
+      "name": "PharmEasy",
+      "description": "Digital pharmacy and diagnostics",
+      "sector": "health",
+      "exited": false
+    },
+    {
+      "name": "BestDoc",
+      "description": "Hospital patient experience",
+      "sector": "health",
+      "exited": false
+    },
+    {
+      "name": "Plum",
+      "description": "Employee health insurance",
+      "sector": "health",
+      "exited": false
+    },
+    {
+      "name": "Breathe Well-being",
+      "description": "Digital diabetes care",
+      "sector": "health",
+      "exited": false
+    },
+    {
+      "name": "Zetwerk",
+      "description": "Precision manufacturing",
+      "sector": "ind",
+      "exited": false
+    },
+    {
+      "name": "Infra.Market",
+      "description": "Construction materials",
+      "sector": "ind",
+      "exited": false
+    },
+    {
+      "name": "Ather Energy",
+      "description": "Electric two-wheelers",
+      "sector": "ind",
+      "exited": false
+    },
+    {
+      "name": "Celcius",
+      "description": "Cold chain logistics",
+      "sector": "ind",
+      "exited": false
+    },
+    {
+      "name": "Zippee",
+      "description": "Quick commerce logistics",
+      "sector": "ind",
+      "exited": false
+    },
+    {
+      "name": "myHQ",
+      "description": "Flexible workspaces, acquired by ANAROCK",
+      "sector": "ind",
+      "exited": true
+    }
+  ]
+}
