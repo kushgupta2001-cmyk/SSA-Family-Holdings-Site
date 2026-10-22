@@ -67,7 +67,7 @@ From then on, every push to `main` redeploys the site automatically.
 
 ## Adding photos
 
-There are 58 photo slots across the site. **PHOTOS.md lists every one** with the exact file name, the folder and the recommended size.
+There are 60 photo slots across the site. **PHOTOS.md lists every one** with the exact file name, the folder and the recommended size.
 
 1. Name the photo exactly as listed, e.g. `agam-gupta.jpg`.
 2. Put it in the listed folder, e.g. `assets/images/people/`.
@@ -93,14 +93,6 @@ These bracketed placeholders are in the pages. Search for each one and replace i
 
 **real-estate.html**
 
-- `[Hotel name]`
-- `[XX]`
-- `[Hotel brand]`
-- `[year]`
-- `[Corridor, e.g. NH-48]`
-- `[Gurugram]`
-- `[Noida]`
-- `[Corridor]`
 - `[Office address]`
 
 **chartered-accountants.html**

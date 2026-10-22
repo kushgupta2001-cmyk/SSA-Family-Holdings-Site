@@ -31,18 +31,20 @@ into the folder shown, commit and push. Vercel redeploys in about a minute and t
 | Save as | What goes here | Recommended size |
 |---|---|---|
 | `assets/images/real-estate/01-completed-project-full-bleed.jpg` | Photograph · Completed project, full bleed (section: Banner behind the heading) | 2400 × 1400 px (full-width banner) |
-| `assets/images/real-estate/02-hotel-name.jpg` | Photograph (section: Hotel name) | 1200 × 800 px |
-| `assets/images/real-estate/03-hotel-name.jpg` | Photograph (section: Hotel name) | 1200 × 800 px |
-| `assets/images/real-estate/04-hotel-name.jpg` | Photograph (section: Hotel name) | 1200 × 800 px |
-| `assets/images/real-estate/05-hotel-name.jpg` | Rendering (section: Hotel name) | 1200 × 800 px |
-| `assets/images/real-estate/06-hotel-name.jpg` | Rendering (section: Hotel name) | 1200 × 800 px |
-| `assets/images/real-estate/07-hotel-name.jpg` | Rendering (section: Hotel name) | 1200 × 800 px |
+| `assets/images/real-estate/02-salt-stayz-basil.jpg` | Photograph (section: Salt Stayz Basil) | 1200 × 800 px |
+| `assets/images/real-estate/03-salt-stayz-autograph.jpg` | Photograph (section: Salt Stayz Autograph) | 1200 × 800 px |
+| `assets/images/real-estate/04-sg09.jpg` | Rendering (section: SG09) | 1200 × 800 px |
+| `assets/images/real-estate/05-sg03.jpg` | Rendering (section: SG03) | 1200 × 800 px |
+| `assets/images/real-estate/06-sg01.jpg` | Rendering (section: SG01) | 1200 × 800 px |
+| `assets/images/real-estate/07-sg02.jpg` | Rendering (section: SG02) | 1200 × 800 px |
 | `assets/images/real-estate/08-jim-corbett-site.jpg` | Photograph · Jim Corbett site (section: Banner behind the heading) | 1600 × 1100 px |
-| `assets/images/real-estate/09-corridor-e-g-nh-48.jpg` | Aerial photograph (section: Corridor, e.g. NH-48) | 1200 × 900 px |
-| `assets/images/real-estate/10-gurugram.jpg` | Aerial photograph (section: Gurugram) | 1200 × 900 px |
-| `assets/images/real-estate/11-noida.jpg` | Aerial photograph (section: Noida) | 1200 × 900 px |
-| `assets/images/real-estate/12-corridor.jpg` | Aerial photograph (section: Corridor) | 1200 × 900 px |
-| `assets/images/real-estate/13-jim-corbett.jpg` | Aerial photograph (section: Jim Corbett) | 1200 × 900 px |
+| `assets/images/real-estate/09-golf-course-road-gurugram.jpg` | Aerial photograph (section: Golf Course Road, Gurugram) | 1200 × 900 px |
+| `assets/images/real-estate/10-chattarpur.jpg` | Aerial photograph (section: Chattarpur) | 1200 × 900 px |
+| `assets/images/real-estate/11-kapashera.jpg` | Aerial photograph (section: Kapashera) | 1200 × 900 px |
+| `assets/images/real-estate/12-brijwasan.jpg` | Aerial photograph (section: Brijwasan) | 1200 × 900 px |
+| `assets/images/real-estate/13-delhi-mumbai-corridor.jpg` | Aerial photograph (section: Delhi–Mumbai Corridor) | 1200 × 900 px |
+| `assets/images/real-estate/14-sohna.jpg` | Aerial photograph (section: Sohna) | 1200 × 900 px |
+| `assets/images/real-estate/15-ayodhya.jpg` | Aerial photograph (section: Ayodhya) | 1200 × 900 px |
 
 ## Sanjay Satpal & Associates, Chartered Accountants  (`/chartered-accountants`)
 

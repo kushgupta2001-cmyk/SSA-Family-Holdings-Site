@@ -2,58 +2,58 @@
   "_help": "status must be 'completed' or 'development'. Photos: assets/images/real-estate/projects/<photo>.jpg, where <photo> is the 'photo' value below.",
   "projects": [
     {
-      "name": "[Project name]",
+      "name": "WH01",
       "type": "Warehousing & logistics",
-      "location": "[Location]",
-      "status": "completed",
-      "year": "[Year]",
-      "size": "[Area, sq ft]",
-      "photo": ""
+      "location": "Jhajjar",
+      "status": "development",
+      "year": "",
+      "size": "",
+      "photo": "wh01"
     },
     {
-      "name": "[Project name]",
+      "name": "Aashiyana",
       "type": "Farmhouses",
-      "location": "[Location]",
+      "location": "Gurugram",
       "status": "completed",
-      "year": "[Year]",
-      "size": "[Area, acres]",
-      "photo": ""
+      "year": "",
+      "size": "",
+      "photo": "aashiyana"
     },
     {
-      "name": "[Project name]",
+      "name": "IT01",
       "type": "Commercial",
-      "location": "[Location]",
+      "location": "Greater Noida",
       "status": "completed",
-      "year": "[Year]",
-      "size": "[Area, sq ft]",
-      "photo": ""
+      "year": "",
+      "size": "",
+      "photo": "it01"
     },
     {
-      "name": "[Project name]",
-      "type": "Hospitality",
-      "location": "[Location]",
+      "name": "2412",
+      "type": "Commercial",
+      "location": "Gurugram",
       "status": "completed",
-      "year": "[Year]",
-      "size": "[Rooms]",
-      "photo": ""
+      "year": "2023",
+      "size": "",
+      "photo": "2412"
     },
     {
-      "name": "[Project name]",
-      "type": "Warehousing & logistics",
-      "location": "[Location]",
-      "status": "development",
-      "year": "[Expected year]",
-      "size": "[Area, sq ft]",
-      "photo": ""
+      "name": "PK05",
+      "type": "Commercial",
+      "location": "Greater Noida",
+      "status": "completed",
+      "year": "2025",
+      "size": "",
+      "photo": "pk05"
     },
     {
-      "name": "[Project name]",
-      "type": "Hospitality",
-      "location": "[Location]",
+      "name": "SG09",
+      "type": "Commercial",
+      "location": "Greater Noida",
       "status": "development",
-      "year": "[Expected year]",
-      "size": "[Rooms]",
-      "photo": ""
+      "year": "2027",
+      "size": "",
+      "photo": "sg09"
     }
   ]
 }
