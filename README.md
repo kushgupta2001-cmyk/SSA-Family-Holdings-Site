@@ -83,43 +83,20 @@ All wording is in the `.html` files. Open a page in any text editor (or edit dir
 
 These bracketed placeholders are in the pages. Search for each one and replace it, brackets included:
 
-**index.html**
-
-- `[Office address]`
-
-**our-story.html**
-
-- `[Office address]`
-
-**real-estate.html**
-
-- `[Office address]`
-
-**chartered-accountants.html**
-
-- `[Office address]`
-
-**ssa-capital.html**
-
-- `[Office address]`
-
 **people.html**
 
 - `[Name]`
 - `[Role]`
-- `[Office address]`
 
 **foundation.html**
 
 - `[Sansthan name]`
 - `[Registration details]`
-- `[Office address]`
 
 **news.html**
 
 - `[Month Year]`
 - `[Hotel opening or project milestone]`
-- `[Office address]`
 
 Also check `assets/data/news.json` for the two placeholder news items (Archana Foundation, SSA Real Estate), and the phone number `+91 11 4658 0000` and email addresses, which are placeholders across the site.
 
