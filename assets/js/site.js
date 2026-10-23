@@ -88,6 +88,20 @@
     });
   }
 
+  /* ---------- Brand logos ----------
+     Marks come at very different shapes (wide wordmarks vs square tiles), so give
+     stubbier marks more height to keep them visually even. */
+  function sizeLogo(img) {
+    function apply() {
+      if (!img.naturalWidth || !img.naturalHeight) return;
+      var a = img.naturalWidth / img.naturalHeight;
+      img.style.height = a >= 2.6 ? '44px' : a >= 1.8 ? '56px' : '68px';
+    }
+    if (img.complete) apply();
+    img.addEventListener('load', apply);
+    img.addEventListener('error', function () { if (img.parentNode) img.parentNode.remove(); });
+  }
+
   /* ---------- Portfolio (SSA Capital page) ---------- */
   function initPortfolio() {
     var fWrap = document.getElementById('portfolio-filters');
@@ -102,6 +116,20 @@
           .filter(function (c) { return current === 'all' || c.sector === current; })
           .forEach(function (c) {
             var li = el('li', 'flex: 1 1 280px; min-width: 0; min-height: 132px; padding: 22px 24px; box-sizing: border-box; border-right: 1px solid #D8D0BF; border-bottom: 1px solid #D8D0BF; background: #FBF9F4; display: flex; flex-direction: column; gap: 6px');
+            li.className = 'pf-card';
+            if (c.logo) {
+              var box = el('div');
+              box.className = 'logo-box';
+              var img = document.createElement('img');
+              img.className = 'brand-logo';
+              img.alt = c.name + ' logo';
+              img.loading = 'lazy';
+              img.decoding = 'async';
+              img.src = c.logo;
+              box.appendChild(img);
+              li.appendChild(box);
+              sizeLogo(img);
+            }
             var top = el('div', 'display: flex; justify-content: space-between; align-items: baseline; gap: 12px');
             top.appendChild(el('span', "font-family: 'Cormorant Garamond', Georgia, serif; font-size: 25px; font-weight: 600; line-height: 1.1", c.name));
             if (c.exited) {
@@ -184,7 +212,11 @@
     }).catch(function (e) { console.warn('Project list could not load:', e.message); });
   }
 
-  function init() { initNav(); initPhotos(); initPortfolio(); initNews(); initProjects(); }
+  function initStaticLogos() {
+    document.querySelectorAll('img.brand-logo').forEach(sizeLogo);
+  }
+
+  function init() { initNav(); initPhotos(); initPortfolio(); initNews(); initProjects(); initStaticLogos(); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();

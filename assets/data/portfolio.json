@@ -30,211 +30,246 @@
       "name": "Calligo Technologies",
       "description": "POSIT-based processors for high-performance computing",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/calligo.svg"
     },
     {
       "name": "TakeMe2Space",
       "description": "Orbital edge computing and AI nanosatellites",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/takeme2space.svg"
     },
     {
       "name": "Genrobotics",
       "description": "Sanitation and medical exoskeleton robotics",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/genrobotics.svg"
     },
     {
       "name": "Redwing Aerospace",
       "description": "Autonomous medical drone logistics",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/redwing.svg"
     },
     {
       "name": "UptimeAI",
       "description": "Industrial AI for predictive plant operations",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/uptime-ai.png"
     },
     {
       "name": "Flam",
       "description": "Spatial AI and mixed reality",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/flam.png"
     },
     {
       "name": "Consint AI",
       "description": "Conversational AI for enterprises",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/consint-ai.svg"
     },
     {
       "name": "Clootrack",
       "description": "AI customer experience analytics",
       "sector": "deep",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/clootrack.svg"
     },
     {
       "name": "Wigzo",
       "description": "Marketing automation, acquired by Shiprocket",
       "sector": "deep",
-      "exited": true
+      "exited": true,
+      "logo": "/assets/logos/wigzo.png"
     },
     {
       "name": "Finsall",
       "description": "Insurance premium financing",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/finsall.svg"
     },
     {
       "name": "AdvaRisk",
       "description": "Credit risk and stressed asset monitoring",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/advarisk.svg"
     },
     {
       "name": "Slice",
       "description": "Digital banking and payments",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/slice.png"
     },
     {
       "name": "Upstox",
       "description": "Digital brokerage",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/upstox.svg"
     },
     {
       "name": "Wint Wealth",
       "description": "Retail fixed income",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/wint-wealth.svg"
     },
     {
       "name": "Grip Invest",
       "description": "Alternative fixed income",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/grip-invest.png"
     },
     {
       "name": "Strata",
       "description": "Fractional commercial real estate",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/strata.svg"
     },
     {
       "name": "National Stock Exchange",
       "description": "Market infrastructure",
       "sector": "fin",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/nse.svg"
     },
     {
       "name": "Zepto",
       "description": "Quick commerce",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/zepto.png"
     },
     {
       "name": "Spinny",
       "description": "Pre-owned car retail",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/spinny.svg"
     },
     {
       "name": "BlueStone",
       "description": "Fine jewellery",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/bluestone.png"
     },
     {
       "name": "GIVA",
       "description": "Silver and demi-fine jewellery",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/giva.png"
     },
     {
       "name": "mCaffeine",
       "description": "Personal care",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/mcaffeine.png"
     },
     {
       "name": "The Souled Store",
       "description": "Licensed apparel",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/the-souled-store.png"
     },
     {
       "name": "Supertails",
       "description": "Pet care",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/supertails.png"
     },
     {
       "name": "Plix",
       "description": "Plant-based nutrition",
       "sector": "con",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/plix.png"
     },
     {
       "name": "PharmEasy",
       "description": "Digital pharmacy and diagnostics",
       "sector": "health",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/pharmeasy.svg"
     },
     {
       "name": "BestDoc",
       "description": "Hospital patient experience",
       "sector": "health",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/bestdoc.svg"
     },
     {
       "name": "Plum",
       "description": "Employee health insurance",
       "sector": "health",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/plum.svg"
     },
     {
       "name": "Breathe Well-being",
       "description": "Digital diabetes care",
       "sector": "health",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/breathe-well-being.png"
     },
     {
       "name": "Zetwerk",
       "description": "Precision manufacturing",
       "sector": "ind",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/zetwerk.svg"
     },
     {
       "name": "Infra.Market",
       "description": "Construction materials",
       "sector": "ind",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/infra-market.svg"
     },
     {
       "name": "Ather Energy",
       "description": "Electric two-wheelers",
       "sector": "ind",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/ather-energy.svg"
     },
     {
       "name": "Celcius",
       "description": "Cold chain logistics",
       "sector": "ind",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/celsius.svg"
     },
     {
       "name": "Zippee",
       "description": "Quick commerce logistics",
       "sector": "ind",
-      "exited": false
+      "exited": false,
+      "logo": "/assets/logos/zippee.svg"
     },
     {
       "name": "myHQ",
       "description": "Flexible workspaces, acquired by ANAROCK",
       "sector": "ind",
-      "exited": true
+      "exited": true,
+      "logo": "/assets/logos/myhq.svg"
     }
   ]
 }
