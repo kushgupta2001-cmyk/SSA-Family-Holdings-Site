@@ -213,7 +213,10 @@
   }
 
   function initStaticLogos() {
-    document.querySelectorAll('img.brand-logo').forEach(sizeLogo);
+    // Fund logos use one fixed height (set in CSS) so they line up; only portfolio logos are sized by shape
+    document.querySelectorAll('.lp-card img.brand-logo').forEach(function (img) {
+      img.addEventListener('error', function () { if (img.parentNode) img.parentNode.remove(); });
+    });
   }
 
   function init() { initNav(); initPhotos(); initPortfolio(); initNews(); initProjects(); initStaticLogos(); }

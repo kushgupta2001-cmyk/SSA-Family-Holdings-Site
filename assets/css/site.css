@@ -93,3 +93,8 @@ img { max-width: 100%; display: block; }
 .pf-card:hover .brand-logo, .lp-card:hover .brand-logo { filter: none; opacity: 1; }
 @media (hover: none) { .brand-logo { filter: none; opacity: 1; } }
 @media (prefers-reduced-motion: reduce) { .pf-card:hover, .lp-card:hover { transform: none; } }
+
+/* Fund (LP) logos: one height for all, left-aligned on a common line */
+.lp-card .logo-box { height: 56px; }
+.lp-card { flex: 1 1 170px !important; }
+.lp-card .brand-logo { height: 44px !important; max-width: 160px; }
