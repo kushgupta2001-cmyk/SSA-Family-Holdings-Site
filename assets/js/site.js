@@ -95,7 +95,9 @@
     function apply() {
       if (!img.naturalWidth || !img.naturalHeight) return;
       var a = img.naturalWidth / img.naturalHeight;
-      img.style.height = a >= 2.6 ? '44px' : a >= 1.8 ? '56px' : '68px';
+      // Equal visual weight: roughly the same area for every mark, within sensible bounds
+      var h = Math.max(26, Math.min(60, Math.sqrt(6400 / a)));
+      img.style.height = Math.round(h) + 'px';
     }
     if (img.complete) apply();
     img.addEventListener('load', apply);
