@@ -70,3 +70,6 @@ img { max-width: 100%; display: block; }
   html { scroll-behavior: auto; }
   * { transition: none !important; }
 }
+
+/* Foundation programme cards: headings reserve two lines so the text below lines up across cards */
+@media (max-width: 760px) { .prog-title { min-height: 0 !important; } }
