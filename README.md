@@ -90,7 +90,6 @@ These bracketed placeholders are in the pages. Search for each one and replace i
 
 **foundation.html**
 
-- `[Sansthan name]`
 - `[Registration details]`
 
 **news.html**
